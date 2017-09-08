@@ -1,7 +1,0 @@
-2017-09-07 14:22:40.191  INFO 6224 --- [main] com.zick.SpringdemoApplication           : Starting SpringdemoApplication on lp-PC with PID 6224 (D:\File\IdeaProjects\springdemo\target\classes started by Administrator in D:\File\IdeaProjects\springdemo)
-2017-09-07 14:22:40.194  INFO 6224 --- [main] com.zick.SpringdemoApplication           : No active profile set, falling back to default profiles: default
-2017-09-07 14:22:41.685  INFO 6224 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2017-09-07 14:22:41.686  INFO 6224 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
-2017-09-07 14:22:41.770  INFO 6224 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2017-09-07 14:22:42.822  INFO 6224 --- [main] com.zick.SpringdemoApplication           : Started SpringdemoApplication in 2.882 seconds (JVM running for 3.488)
-2017-09-07 14:22:49.348  INFO 6224 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
