@@ -8,6 +8,10 @@ import com.zick.util.MD5Util;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.thymeleaf.expression.Lists;
+import org.thymeleaf.util.ListUtils;
+
+import java.util.List;
 import java.util.UUID;
 
 /**
@@ -59,6 +63,14 @@ public class UserService {
             return ServerResponse.createBySuccess(user);
         }
         return null;
+    }
+
+    public ServerResponse<List<User>> getAll(){
+        List<User> list = userMapper.getAll();
+        if(!ListUtils.isEmpty(list)){
+            return ServerResponse.createBySuccess(list);
+        }
+        return ServerResponse.createByErrorMessage("当前无用户");
     }
 
 }

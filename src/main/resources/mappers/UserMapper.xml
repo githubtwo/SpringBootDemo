@@ -128,4 +128,8 @@
     WHERE username=#{username}
     and password  =#{password}
   </select>
+
+  <select id="getAll" resultMap="BaseResultMap">
+    SELECT * from tb_user
+  </select>
 </mapper>

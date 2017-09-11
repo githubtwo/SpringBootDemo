@@ -1,4 +1,4 @@
-package com.zick.druid;
+package com.zick.config.druid;
 
 import com.alibaba.druid.support.http.WebStatFilter;
 

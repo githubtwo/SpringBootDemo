@@ -2179,7 +2179,7 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'sp
 2017-09-08 14:06:37.897  INFO 8596 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
 2017-09-08 14:06:37.898  INFO 8596 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1353 ms
 2017-09-08 14:06:38.041  INFO 8596 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
-2017-09-08 14:06:38.043  INFO 8596 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'com.zick.druid.DruidStatViewServlet' to [/druid/*]
+2017-09-08 14:06:38.043  INFO 8596 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'com.zick.config.druid.DruidStatViewServlet' to [/druid/*]
 2017-09-08 14:06:38.046  INFO 8596 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
 2017-09-08 14:06:38.046  INFO 8596 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'druidWebStatFilter' to urls: [/*]
 2017-09-08 14:06:38.082  WARN 8596 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springdemoApplication': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.datasource.driverClassName' in value "${spring.datasource.driverClassName}"
@@ -2250,7 +2250,7 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'sp
 2017-09-08 14:07:51.179  INFO 8416 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
 2017-09-08 14:07:51.179  INFO 8416 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1583 ms
 2017-09-08 14:07:51.315  INFO 8416 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
-2017-09-08 14:07:51.316  INFO 8416 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'com.zick.druid.DruidStatViewServlet' to [/druid/*]
+2017-09-08 14:07:51.316  INFO 8416 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'com.zick.config.druid.DruidStatViewServlet' to [/druid/*]
 2017-09-08 14:07:51.320  INFO 8416 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
 2017-09-08 14:07:51.321  INFO 8416 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'druidWebStatFilter' to urls: [/*]
 2017-09-08 14:07:51.770  INFO 8416 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/thymeleaf/test]}" onto public java.lang.String com.zick.controller.ThymeleafTestController.getHome()
@@ -2445,7 +2445,7 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'sp
 2017-09-08 14:11:29.900  INFO 13888 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
 2017-09-08 14:11:29.900  INFO 13888 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1581 ms
 2017-09-08 14:11:30.037  INFO 13888 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
-2017-09-08 14:11:30.038  INFO 13888 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'com.zick.druid.DruidStatViewServlet' to [/druid/*]
+2017-09-08 14:11:30.038  INFO 13888 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'com.zick.config.druid.DruidStatViewServlet' to [/druid/*]
 2017-09-08 14:11:30.041  INFO 13888 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
 2017-09-08 14:11:30.041  INFO 13888 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'druidWebStatFilter' to urls: [/*]
 2017-09-08 14:11:30.462  INFO 13888 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/thymeleaf/test]}" onto public java.lang.String com.zick.controller.ThymeleafTestController.getHome()
@@ -2470,3 +2470,601 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'sp
 2017-09-08 14:11:40.519 DEBUG 13888 --- [http-nio-8080-exec-3] com.zick.dao.UserMapper.selectLogin      : ==>  Preparing: SELECT id, username, password, phone, create_time, update_time, img FROM tb_user WHERE username=? and password =? 
 2017-09-08 14:11:40.520 DEBUG 13888 --- [http-nio-8080-exec-3] com.zick.dao.UserMapper.selectLogin      : ==> Parameters: zick(String), D8F80B67499E434EA61ADAF6E6219BF2(String)
 2017-09-08 14:11:40.551 DEBUG 13888 --- [http-nio-8080-exec-3] com.zick.dao.UserMapper.selectLogin      : <==      Total: 1
+2017-09-11 16:10:10.978  INFO 6788 --- [main] com.zick.SpringdemoApplication           : Starting SpringdemoApplication on lp-PC with PID 6788 (D:\File\IdeaProjects\springdemo\target\classes started by Administrator in D:\File\IdeaProjects\springdemo)
+2017-09-11 16:10:10.982  INFO 6788 --- [main] com.zick.SpringdemoApplication           : No active profile set, falling back to default profiles: default
+2017-09-11 16:10:11.280  INFO 6788 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@123f1134: startup date [Mon Sep 11 16:10:11 CST 2017]; root of context hierarchy
+2017-09-11 16:10:12.029  INFO 6788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-11 16:10:12.857  INFO 6788 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-09-11 16:10:12.869  INFO 6788 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-09-11 16:10:12.870  INFO 6788 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-11 16:10:12.981  INFO 6788 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-11 16:10:12.982  INFO 6788 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1706 ms
+2017-09-11 16:10:13.131  INFO 6788 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-11 16:10:13.132  INFO 6788 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'com.zick.config.druid.DruidStatViewServlet' to [/druid/*]
+2017-09-11 16:10:13.136  INFO 6788 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-11 16:10:13.137  INFO 6788 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2017-09-11 16:10:13.566  WARN 6788 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'exampleController': Unsatisfied dependency expressed through field 'redisService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.zick.service.IRedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2017-09-11 16:10:13.568  INFO 6788 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2017-09-11 16:10:13.597  WARN 6788 --- [main] o.s.b.c.e.EventPublishingRunListener     : Error calling ApplicationEventListener
+
+java.lang.NoSuchMethodError: ch.qos.logback.classic.LoggerContext.removeObject(Ljava/lang/String;)V
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.markAsUninitialized(LogbackLoggingSystem.java:308) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.cleanUp(LogbackLoggingSystem.java:198) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.logging.LoggingApplicationListener.onApplicationFailedEvent(LoggingApplicationListener.java:258) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223) ~[spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:159) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:122) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.boot.context.event.EventPublishingRunListener.finished(EventPublishingRunListener.java:115) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplicationRunListeners.callFinishedListener(SpringApplicationRunListeners.java:79) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplicationRunListeners.finished(SpringApplicationRunListeners.java:72) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:745) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at com.zick.SpringdemoApplication.main(SpringdemoApplication.java:26) [classes/:na]
+
+2017-09-11 16:10:13.604  INFO 6788 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-09-11 16:10:13.696 ERROR 6788 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field redisService in com.zick.controller.ExampleController required a bean of type 'com.zick.service.IRedisService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.zick.service.IRedisService' in your configuration.
+
+2017-09-11 16:12:52.002  INFO 2324 --- [main] com.zick.SpringdemoApplication           : Starting SpringdemoApplication on lp-PC with PID 2324 (D:\File\IdeaProjects\springdemo\target\classes started by Administrator in D:\File\IdeaProjects\springdemo)
+2017-09-11 16:12:52.007  INFO 2324 --- [main] com.zick.SpringdemoApplication           : No active profile set, falling back to default profiles: default
+2017-09-11 16:12:52.266  INFO 2324 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@123f1134: startup date [Mon Sep 11 16:12:52 CST 2017]; root of context hierarchy
+2017-09-11 16:12:52.948  INFO 2324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-11 16:12:53.695  INFO 2324 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-09-11 16:12:53.705  INFO 2324 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-09-11 16:12:53.706  INFO 2324 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-11 16:12:53.796  INFO 2324 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-11 16:12:53.796  INFO 2324 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1533 ms
+2017-09-11 16:12:53.930  INFO 2324 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-11 16:12:53.931  INFO 2324 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'com.zick.config.druid.DruidStatViewServlet' to [/druid/*]
+2017-09-11 16:12:53.934  INFO 2324 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-11 16:12:53.934  INFO 2324 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2017-09-11 16:12:54.440  INFO 2324 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/get],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisGet()
+2017-09-11 16:12:54.441  INFO 2324 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAll]}" onto public com.zick.common.ServerResponse<java.util.List<com.zick.model.User>> com.zick.controller.ExampleController.users()
+2017-09-11 16:12:54.443  INFO 2324 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/set],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisSet(java.lang.String)
+2017-09-11 16:12:54.444  INFO 2324 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/thymeleaf/test]}" onto public java.lang.String com.zick.controller.ThymeleafTestController.getHome()
+2017-09-11 16:12:54.445  INFO 2324 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.login(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession,java.lang.String,java.lang.String)
+2017-09-11 16:12:54.445  INFO 2324 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.zick.controller.UserController.sayHello()
+2017-09-11 16:12:54.451  INFO 2324 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-11 16:12:54.451  INFO 2324 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-11 16:12:54.555  INFO 2324 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@123f1134: startup date [Mon Sep 11 16:12:52 CST 2017]; root of context hierarchy
+2017-09-11 16:12:55.451  WARN 2324 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2017-09-11 16:12:55.512  INFO 2324 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-11 16:12:55.513  INFO 2324 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-09-11 16:12:55.519  INFO 2324 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-09-11 16:12:55.574  INFO 2324 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-09-11 16:12:55.579  INFO 2324 --- [main] com.zick.SpringdemoApplication           : Started SpringdemoApplication in 4.393 seconds (JVM running for 5.359)
+2017-09-11 16:13:19.901  INFO 2324 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-11 16:13:19.901  INFO 2324 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-11 16:13:19.918  INFO 2324 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2017-09-11 16:13:19.977  INFO 2324 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2017-09-11 16:13:20.548 DEBUG 2324 --- [http-nio-8080-exec-1] com.zick.dao.UserMapper.getAll           : ==>  Preparing: SELECT * from tb_user 
+2017-09-11 16:13:20.578 DEBUG 2324 --- [http-nio-8080-exec-1] com.zick.dao.UserMapper.getAll           : ==> Parameters: 
+2017-09-11 16:13:20.631 DEBUG 2324 --- [http-nio-8080-exec-1] com.zick.dao.UserMapper.getAll           : <==      Total: 9
+2017-09-11 16:13:20.773  WARN 2324 --- [http-nio-8080-exec-2] o.s.web.servlet.PageNotFound             : No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'dispatcherServlet'
+2017-09-11 16:13:51.621 ERROR 2324 --- [http-nio-8080-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool] with root cause
+
+redis.clients.jedis.exceptions.JedisDataException: ERR invalid password
+	at redis.clients.jedis.Protocol.processError(Protocol.java:127) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.process(Protocol.java:161) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.read(Protocol.java:215) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:239) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.BinaryJedis.auth(BinaryJedis.java:2139) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:108) ~[jedis-2.9.0.jar:na]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:868) ~[commons-pool2-2.4.2.jar:2.4.2]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:435) ~[commons-pool2-2.4.2.jar:2.4.2]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363) ~[commons-pool2-2.4.2.jar:2.4.2]
+	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:16) ~[jedis-2.9.0.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:194) ~[spring-data-redis-1.8.6.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.getConnection(JedisConnectionFactory.java:348) ~[spring-data-redis-1.8.6.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:129) ~[spring-data-redis-1.8.6.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:92) ~[spring-data-redis-1.8.6.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:79) ~[spring-data-redis-1.8.6.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:194) ~[spring-data-redis-1.8.6.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:169) ~[spring-data-redis-1.8.6.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:157) ~[spring-data-redis-1.8.6.RELEASE.jar:na]
+	at com.zick.service.Impl.RedisServiceImpl.set(RedisServiceImpl.java:24) ~[classes/:na]
+	at com.zick.controller.ExampleController.redisSet(ExampleController.java:32) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_91]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_91]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_91]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_91]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123) ~[druid-1.0.11.jar:1.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+
+2017-09-11 16:15:29.362  INFO 6360 --- [main] com.zick.SpringdemoApplication           : Starting SpringdemoApplication on lp-PC with PID 6360 (D:\File\IdeaProjects\springdemo\target\classes started by Administrator in D:\File\IdeaProjects\springdemo)
+2017-09-11 16:15:29.365  INFO 6360 --- [main] com.zick.SpringdemoApplication           : No active profile set, falling back to default profiles: default
+2017-09-11 16:15:29.943  INFO 6360 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7d68ef40: startup date [Mon Sep 11 16:15:29 CST 2017]; root of context hierarchy
+2017-09-11 16:15:30.672  INFO 6360 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-11 16:15:31.427  INFO 6360 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-09-11 16:15:31.436  INFO 6360 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-09-11 16:15:31.438  INFO 6360 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-11 16:15:31.531  INFO 6360 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-11 16:15:31.531  INFO 6360 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1591 ms
+2017-09-11 16:15:31.672  INFO 6360 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-11 16:15:31.673  INFO 6360 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'com.zick.config.druid.DruidStatViewServlet' to [/druid/*]
+2017-09-11 16:15:31.677  INFO 6360 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-11 16:15:31.677  INFO 6360 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2017-09-11 16:15:32.190  INFO 6360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAll]}" onto public com.zick.common.ServerResponse<java.util.List<com.zick.model.User>> com.zick.controller.ExampleController.users()
+2017-09-11 16:15:32.191  INFO 6360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/get],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisGet()
+2017-09-11 16:15:32.193  INFO 6360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/set],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisSet(java.lang.String)
+2017-09-11 16:15:32.193  INFO 6360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/thymeleaf/test]}" onto public java.lang.String com.zick.controller.ThymeleafTestController.getHome()
+2017-09-11 16:15:32.194  INFO 6360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.login(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession,java.lang.String,java.lang.String)
+2017-09-11 16:15:32.195  INFO 6360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.zick.controller.UserController.sayHello()
+2017-09-11 16:15:32.200  INFO 6360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-11 16:15:32.200  INFO 6360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-11 16:15:32.278  INFO 6360 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7d68ef40: startup date [Mon Sep 11 16:15:29 CST 2017]; root of context hierarchy
+2017-09-11 16:15:33.139  WARN 6360 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2017-09-11 16:15:33.199  INFO 6360 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-11 16:15:33.200  INFO 6360 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-09-11 16:15:33.206  INFO 6360 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-09-11 16:15:33.255  INFO 6360 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-09-11 16:15:33.260  INFO 6360 --- [main] com.zick.SpringdemoApplication           : Started SpringdemoApplication in 4.302 seconds (JVM running for 5.132)
+2017-09-11 16:15:36.757  INFO 6360 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-11 16:15:36.757  INFO 6360 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-11 16:15:36.772  INFO 6360 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2017-09-11 16:15:36.825 ERROR 6360 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool] with root cause
+
+redis.clients.jedis.exceptions.JedisDataException: ERR invalid password
+	at redis.clients.jedis.Protocol.processError(Protocol.java:127) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.process(Protocol.java:161) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.read(Protocol.java:215) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:239) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.BinaryJedis.auth(BinaryJedis.java:2139) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:108) ~[jedis-2.9.0.jar:na]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:868) ~[commons-pool2-2.4.2.jar:2.4.2]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:435) ~[commons-pool2-2.4.2.jar:2.4.2]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363) ~[commons-pool2-2.4.2.jar:2.4.2]
+	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:16) ~[jedis-2.9.0.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:194) ~[spring-data-redis-1.8.6.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.getConnection(JedisConnectionFactory.java:348) ~[spring-data-redis-1.8.6.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:129) ~[spring-data-redis-1.8.6.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:92) ~[spring-data-redis-1.8.6.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:79) ~[spring-data-redis-1.8.6.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:194) ~[spring-data-redis-1.8.6.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:169) ~[spring-data-redis-1.8.6.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:157) ~[spring-data-redis-1.8.6.RELEASE.jar:na]
+	at com.zick.service.Impl.RedisServiceImpl.set(RedisServiceImpl.java:24) ~[classes/:na]
+	at com.zick.controller.ExampleController.redisSet(ExampleController.java:32) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_91]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_91]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_91]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_91]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123) ~[druid-1.0.11.jar:1.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+
+2017-09-11 16:19:42.996  INFO 6228 --- [main] com.zick.SpringdemoApplication           : Starting SpringdemoApplication on lp-PC with PID 6228 (D:\File\IdeaProjects\springdemo\target\classes started by Administrator in D:\File\IdeaProjects\springdemo)
+2017-09-11 16:19:42.999  INFO 6228 --- [main] com.zick.SpringdemoApplication           : No active profile set, falling back to default profiles: default
+2017-09-11 16:19:43.197  INFO 6228 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@123f1134: startup date [Mon Sep 11 16:19:43 CST 2017]; root of context hierarchy
+2017-09-11 16:19:43.862  INFO 6228 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-11 16:19:44.602  INFO 6228 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-09-11 16:19:44.612  INFO 6228 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-09-11 16:19:44.613  INFO 6228 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-11 16:19:44.702  INFO 6228 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-11 16:19:44.703  INFO 6228 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1509 ms
+2017-09-11 16:19:44.836  INFO 6228 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-11 16:19:44.837  INFO 6228 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'com.zick.config.druid.DruidStatViewServlet' to [/druid/*]
+2017-09-11 16:19:44.840  INFO 6228 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-11 16:19:44.841  INFO 6228 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2017-09-11 16:19:45.327  INFO 6228 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAll]}" onto public com.zick.common.ServerResponse<java.util.List<com.zick.model.User>> com.zick.controller.ExampleController.users()
+2017-09-11 16:19:45.328  INFO 6228 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/get],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisGet()
+2017-09-11 16:19:45.329  INFO 6228 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/set],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisSet(java.lang.String)
+2017-09-11 16:19:45.330  INFO 6228 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/thymeleaf/test]}" onto public java.lang.String com.zick.controller.ThymeleafTestController.getHome()
+2017-09-11 16:19:45.331  INFO 6228 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.login(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession,java.lang.String,java.lang.String)
+2017-09-11 16:19:45.331  INFO 6228 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.zick.controller.UserController.sayHello()
+2017-09-11 16:19:45.336  INFO 6228 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-11 16:19:45.337  INFO 6228 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-11 16:19:45.428  INFO 6228 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@123f1134: startup date [Mon Sep 11 16:19:43 CST 2017]; root of context hierarchy
+2017-09-11 16:19:46.239  WARN 6228 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2017-09-11 16:19:46.300  INFO 6228 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-11 16:19:46.302  INFO 6228 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-09-11 16:19:46.307  INFO 6228 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-09-11 16:19:46.357  INFO 6228 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-09-11 16:19:46.361  INFO 6228 --- [main] com.zick.SpringdemoApplication           : Started SpringdemoApplication in 3.997 seconds (JVM running for 5.131)
+2017-09-11 16:19:51.006  INFO 6228 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-11 16:19:51.006  INFO 6228 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-11 16:19:51.022  INFO 6228 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2017-09-11 16:19:51.074 ERROR 6228 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool] with root cause
+
+redis.clients.jedis.exceptions.JedisDataException: ERR invalid password
+	at redis.clients.jedis.Protocol.processError(Protocol.java:127) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.process(Protocol.java:161) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.read(Protocol.java:215) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:239) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.BinaryJedis.auth(BinaryJedis.java:2139) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:108) ~[jedis-2.9.0.jar:na]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:868) ~[commons-pool2-2.4.2.jar:2.4.2]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:435) ~[commons-pool2-2.4.2.jar:2.4.2]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363) ~[commons-pool2-2.4.2.jar:2.4.2]
+	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:16) ~[jedis-2.9.0.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:194) ~[spring-data-redis-1.8.6.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.getConnection(JedisConnectionFactory.java:348) ~[spring-data-redis-1.8.6.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:129) ~[spring-data-redis-1.8.6.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:92) ~[spring-data-redis-1.8.6.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:79) ~[spring-data-redis-1.8.6.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:194) ~[spring-data-redis-1.8.6.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:169) ~[spring-data-redis-1.8.6.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:157) ~[spring-data-redis-1.8.6.RELEASE.jar:na]
+	at com.zick.service.Impl.RedisServiceImpl.set(RedisServiceImpl.java:27) ~[classes/:na]
+	at com.zick.controller.ExampleController.redisSet(ExampleController.java:32) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_91]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_91]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_91]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_91]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123) ~[druid-1.0.11.jar:1.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+
+2017-09-11 16:20:48.894  INFO 1160 --- [main] com.zick.SpringdemoApplication           : Starting SpringdemoApplication on lp-PC with PID 1160 (D:\File\IdeaProjects\springdemo\target\classes started by Administrator in D:\File\IdeaProjects\springdemo)
+2017-09-11 16:20:48.897  INFO 1160 --- [main] com.zick.SpringdemoApplication           : No active profile set, falling back to default profiles: default
+2017-09-11 16:20:49.354  INFO 1160 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7d68ef40: startup date [Mon Sep 11 16:20:49 CST 2017]; root of context hierarchy
+2017-09-11 16:20:49.998  INFO 1160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-11 16:20:50.728  INFO 1160 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-09-11 16:20:50.738  INFO 1160 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-09-11 16:20:50.739  INFO 1160 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-11 16:20:50.831  INFO 1160 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-11 16:20:50.832  INFO 1160 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1491 ms
+2017-09-11 16:20:50.983  INFO 1160 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-11 16:20:50.984  INFO 1160 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'com.zick.config.druid.DruidStatViewServlet' to [/druid/*]
+2017-09-11 16:20:50.987  INFO 1160 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-11 16:20:50.988  INFO 1160 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2017-09-11 16:20:51.478  INFO 1160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAll]}" onto public com.zick.common.ServerResponse<java.util.List<com.zick.model.User>> com.zick.controller.ExampleController.users()
+2017-09-11 16:20:51.479  INFO 1160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/get],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisGet()
+2017-09-11 16:20:51.480  INFO 1160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/set],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisSet(java.lang.String)
+2017-09-11 16:20:51.481  INFO 1160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/thymeleaf/test]}" onto public java.lang.String com.zick.controller.ThymeleafTestController.getHome()
+2017-09-11 16:20:51.482  INFO 1160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.login(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession,java.lang.String,java.lang.String)
+2017-09-11 16:20:51.483  INFO 1160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.zick.controller.UserController.sayHello()
+2017-09-11 16:20:51.488  INFO 1160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-11 16:20:51.489  INFO 1160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-11 16:20:51.567  INFO 1160 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7d68ef40: startup date [Mon Sep 11 16:20:49 CST 2017]; root of context hierarchy
+2017-09-11 16:20:52.398  WARN 1160 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2017-09-11 16:20:52.457  INFO 1160 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-11 16:20:52.459  INFO 1160 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-09-11 16:20:52.464  INFO 1160 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-09-11 16:20:52.515  INFO 1160 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-09-11 16:20:52.520  INFO 1160 --- [main] com.zick.SpringdemoApplication           : Started SpringdemoApplication in 3.999 seconds (JVM running for 5.103)
+2017-09-11 16:20:55.833  INFO 1160 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-11 16:20:55.834  INFO 1160 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-11 16:20:55.848  INFO 1160 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2017-09-11 16:20:55.899 ERROR 1160 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool] with root cause
+
+redis.clients.jedis.exceptions.JedisDataException: ERR invalid password
+	at redis.clients.jedis.Protocol.processError(Protocol.java:127) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.process(Protocol.java:161) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.read(Protocol.java:215) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:239) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.BinaryJedis.auth(BinaryJedis.java:2139) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:108) ~[jedis-2.9.0.jar:na]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:868) ~[commons-pool2-2.4.2.jar:2.4.2]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:435) ~[commons-pool2-2.4.2.jar:2.4.2]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363) ~[commons-pool2-2.4.2.jar:2.4.2]
+	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:16) ~[jedis-2.9.0.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:194) ~[spring-data-redis-1.8.6.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.getConnection(JedisConnectionFactory.java:348) ~[spring-data-redis-1.8.6.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:129) ~[spring-data-redis-1.8.6.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:92) ~[spring-data-redis-1.8.6.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:79) ~[spring-data-redis-1.8.6.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:194) ~[spring-data-redis-1.8.6.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:169) ~[spring-data-redis-1.8.6.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:157) ~[spring-data-redis-1.8.6.RELEASE.jar:na]
+	at com.zick.service.Impl.RedisServiceImpl.set(RedisServiceImpl.java:27) ~[classes/:na]
+	at com.zick.controller.ExampleController.redisSet(ExampleController.java:32) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_91]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_91]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_91]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_91]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123) ~[druid-1.0.11.jar:1.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+
+2017-09-11 16:21:47.890  INFO 5164 --- [main] com.zick.SpringdemoApplication           : Starting SpringdemoApplication on lp-PC with PID 5164 (D:\File\IdeaProjects\springdemo\target\classes started by Administrator in D:\File\IdeaProjects\springdemo)
+2017-09-11 16:21:47.893  INFO 5164 --- [main] com.zick.SpringdemoApplication           : No active profile set, falling back to default profiles: default
+2017-09-11 16:21:48.307  INFO 5164 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7d68ef40: startup date [Mon Sep 11 16:21:48 CST 2017]; root of context hierarchy
+2017-09-11 16:21:48.938  INFO 5164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-11 16:21:49.664  INFO 5164 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-09-11 16:21:49.674  INFO 5164 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-09-11 16:21:49.675  INFO 5164 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-11 16:21:49.773  INFO 5164 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-11 16:21:49.773  INFO 5164 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1469 ms
+2017-09-11 16:21:49.922  INFO 5164 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-11 16:21:49.924  INFO 5164 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'com.zick.config.druid.DruidStatViewServlet' to [/druid/*]
+2017-09-11 16:21:49.927  INFO 5164 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-11 16:21:49.927  INFO 5164 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2017-09-11 16:21:50.411  INFO 5164 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAll]}" onto public com.zick.common.ServerResponse<java.util.List<com.zick.model.User>> com.zick.controller.ExampleController.users()
+2017-09-11 16:21:50.412  INFO 5164 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/get],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisGet()
+2017-09-11 16:21:50.413  INFO 5164 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/set],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisSet(java.lang.String)
+2017-09-11 16:21:50.414  INFO 5164 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/thymeleaf/test]}" onto public java.lang.String com.zick.controller.ThymeleafTestController.getHome()
+2017-09-11 16:21:50.415  INFO 5164 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.login(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession,java.lang.String,java.lang.String)
+2017-09-11 16:21:50.416  INFO 5164 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.zick.controller.UserController.sayHello()
+2017-09-11 16:21:50.421  INFO 5164 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-11 16:21:50.421  INFO 5164 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-11 16:21:50.499  INFO 5164 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7d68ef40: startup date [Mon Sep 11 16:21:48 CST 2017]; root of context hierarchy
+2017-09-11 16:21:51.349  WARN 5164 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2017-09-11 16:21:51.410  INFO 5164 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-11 16:21:51.412  INFO 5164 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-09-11 16:21:51.417  INFO 5164 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-09-11 16:21:51.469  INFO 5164 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-09-11 16:21:51.474  INFO 5164 --- [main] com.zick.SpringdemoApplication           : Started SpringdemoApplication in 3.96 seconds (JVM running for 4.742)
+2017-09-11 16:22:08.924  INFO 5164 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-11 16:22:08.924  INFO 5164 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-11 16:22:08.940  INFO 5164 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2017-09-11 16:43:01.128  INFO 5164 --- [http-nio-8080-exec-7] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2017-09-11 16:43:01.709 DEBUG 5164 --- [http-nio-8080-exec-7] com.zick.dao.UserMapper.getAll           : ==>  Preparing: SELECT * from tb_user 
+2017-09-11 16:43:01.733 DEBUG 5164 --- [http-nio-8080-exec-7] com.zick.dao.UserMapper.getAll           : ==> Parameters: 
+2017-09-11 16:43:01.789 DEBUG 5164 --- [http-nio-8080-exec-7] com.zick.dao.UserMapper.getAll           : <==      Total: 9
+2017-09-11 16:47:40.267  INFO 2324 --- [main] com.zick.SpringdemoApplication           : Starting SpringdemoApplication on lp-PC with PID 2324 (D:\File\IdeaProjects\springdemo\target\classes started by Administrator in D:\File\IdeaProjects\springdemo)
+2017-09-11 16:47:40.270  INFO 2324 --- [main] com.zick.SpringdemoApplication           : No active profile set, falling back to default profiles: default
+2017-09-11 16:47:40.568  INFO 2324 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@123f1134: startup date [Mon Sep 11 16:47:40 CST 2017]; root of context hierarchy
+2017-09-11 16:47:41.303  INFO 2324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-11 16:47:42.027  INFO 2324 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-09-11 16:47:42.036  INFO 2324 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-09-11 16:47:42.037  INFO 2324 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-11 16:47:42.130  INFO 2324 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-11 16:47:42.130  INFO 2324 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1565 ms
+2017-09-11 16:47:42.274  INFO 2324 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-11 16:47:42.276  INFO 2324 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'com.zick.config.druid.DruidStatViewServlet' to [/druid/*]
+2017-09-11 16:47:42.279  INFO 2324 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-11 16:47:42.279  INFO 2324 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2017-09-11 16:47:42.761  INFO 2324 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/get],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisGet()
+2017-09-11 16:47:42.762  INFO 2324 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAll]}" onto public com.zick.common.ServerResponse<java.util.List<com.zick.model.User>> com.zick.controller.ExampleController.users()
+2017-09-11 16:47:42.764  INFO 2324 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/set],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisSet(java.lang.String)
+2017-09-11 16:47:42.765  INFO 2324 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/thymeleaf/test]}" onto public java.lang.String com.zick.controller.ThymeleafTestController.getHome()
+2017-09-11 16:47:42.766  INFO 2324 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.login(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession,java.lang.String,java.lang.String)
+2017-09-11 16:47:42.766  INFO 2324 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.zick.controller.UserController.sayHello()
+2017-09-11 16:47:42.771  INFO 2324 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-11 16:47:42.772  INFO 2324 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-11 16:47:42.848  INFO 2324 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@123f1134: startup date [Mon Sep 11 16:47:40 CST 2017]; root of context hierarchy
+2017-09-11 16:47:43.676  WARN 2324 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2017-09-11 16:47:43.737  INFO 2324 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-11 16:47:43.739  INFO 2324 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-09-11 16:47:43.745  INFO 2324 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-09-11 16:47:43.795  INFO 2324 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-09-11 16:47:43.799  INFO 2324 --- [main] com.zick.SpringdemoApplication           : Started SpringdemoApplication in 3.81 seconds (JVM running for 4.557)
+2017-09-11 16:50:13.857  INFO 4172 --- [main] com.zick.SpringdemoApplication           : Starting SpringdemoApplication on lp-PC with PID 4172 (D:\File\IdeaProjects\springdemo\target\classes started by Administrator in D:\File\IdeaProjects\springdemo)
+2017-09-11 16:50:13.861  INFO 4172 --- [main] com.zick.SpringdemoApplication           : No active profile set, falling back to default profiles: default
+2017-09-11 16:50:14.368  INFO 4172 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7d68ef40: startup date [Mon Sep 11 16:50:14 CST 2017]; root of context hierarchy
+2017-09-11 16:50:15.082  INFO 4172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-11 16:50:15.823  INFO 4172 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-09-11 16:50:15.832  INFO 4172 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-09-11 16:50:15.833  INFO 4172 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-11 16:50:15.927  INFO 4172 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-11 16:50:15.927  INFO 4172 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1562 ms
+2017-09-11 16:50:16.079  INFO 4172 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-11 16:50:16.081  INFO 4172 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'com.zick.config.druid.DruidStatViewServlet' to [/druid/*]
+2017-09-11 16:50:16.084  INFO 4172 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-11 16:50:16.084  INFO 4172 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2017-09-11 16:50:16.571  INFO 4172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAll]}" onto public com.zick.common.ServerResponse<java.util.List<com.zick.model.User>> com.zick.controller.ExampleController.users()
+2017-09-11 16:50:16.573  INFO 4172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/set],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisSet(java.lang.String)
+2017-09-11 16:50:16.573  INFO 4172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/get],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisGet()
+2017-09-11 16:50:16.574  INFO 4172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/thymeleaf/test]}" onto public java.lang.String com.zick.controller.ThymeleafTestController.getHome()
+2017-09-11 16:50:16.575  INFO 4172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.login(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession,java.lang.String,java.lang.String)
+2017-09-11 16:50:16.576  INFO 4172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.zick.controller.UserController.sayHello()
+2017-09-11 16:50:16.581  INFO 4172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-11 16:50:16.581  INFO 4172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-11 16:50:16.659  INFO 4172 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7d68ef40: startup date [Mon Sep 11 16:50:14 CST 2017]; root of context hierarchy
+2017-09-11 16:50:17.632  WARN 4172 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2017-09-11 16:50:17.694  INFO 4172 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-11 16:50:17.695  INFO 4172 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-09-11 16:50:17.701  INFO 4172 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-09-11 16:50:17.759  INFO 4172 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-09-11 16:50:17.763  INFO 4172 --- [main] com.zick.SpringdemoApplication           : Started SpringdemoApplication in 4.15 seconds (JVM running for 4.902)
+2017-09-11 16:50:42.142  INFO 4172 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-11 16:50:42.142  INFO 4172 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-11 16:50:42.157  INFO 4172 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2017-09-11 16:50:42.210  INFO 4172 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2017-09-11 16:50:42.799 DEBUG 4172 --- [http-nio-8080-exec-1] com.zick.dao.UserMapper.getAll           : ==>  Preparing: SELECT * from tb_user 
+2017-09-11 16:50:42.824 DEBUG 4172 --- [http-nio-8080-exec-1] com.zick.dao.UserMapper.getAll           : ==> Parameters: 
+2017-09-11 16:50:42.875 DEBUG 4172 --- [http-nio-8080-exec-1] com.zick.dao.UserMapper.getAll           : <==      Total: 9
+2017-09-11 16:51:05.704  INFO 6900 --- [main] com.zick.SpringdemoApplication           : Starting SpringdemoApplication on lp-PC with PID 6900 (D:\File\IdeaProjects\springdemo\target\classes started by Administrator in D:\File\IdeaProjects\springdemo)
+2017-09-11 16:51:05.708  INFO 6900 --- [main] com.zick.SpringdemoApplication           : No active profile set, falling back to default profiles: default
+2017-09-11 16:51:06.049  INFO 6900 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7d68ef40: startup date [Mon Sep 11 16:51:06 CST 2017]; root of context hierarchy
+2017-09-11 16:51:06.706  INFO 6900 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-11 16:51:07.446  INFO 6900 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-09-11 16:51:07.456  INFO 6900 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-09-11 16:51:07.457  INFO 6900 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-11 16:51:07.548  INFO 6900 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-11 16:51:07.549  INFO 6900 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1503 ms
+2017-09-11 16:51:07.681  INFO 6900 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-11 16:51:07.683  INFO 6900 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'com.zick.config.druid.DruidStatViewServlet' to [/druid/*]
+2017-09-11 16:51:07.686  INFO 6900 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-11 16:51:07.686  INFO 6900 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2017-09-11 16:51:08.170  INFO 6900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/set],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisSet(java.lang.String)
+2017-09-11 16:51:08.171  INFO 6900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAll]}" onto public com.zick.common.ServerResponse<java.util.List<com.zick.model.User>> com.zick.controller.ExampleController.users()
+2017-09-11 16:51:08.171  INFO 6900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/get],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisGet()
+2017-09-11 16:51:08.172  INFO 6900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/thymeleaf/test]}" onto public java.lang.String com.zick.controller.ThymeleafTestController.getHome()
+2017-09-11 16:51:08.173  INFO 6900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.login(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession,java.lang.String,java.lang.String)
+2017-09-11 16:51:08.174  INFO 6900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.zick.controller.UserController.sayHello()
+2017-09-11 16:51:08.179  INFO 6900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-11 16:51:08.179  INFO 6900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-11 16:51:08.271  INFO 6900 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7d68ef40: startup date [Mon Sep 11 16:51:06 CST 2017]; root of context hierarchy
+2017-09-11 16:51:09.087  WARN 6900 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2017-09-11 16:51:09.149  INFO 6900 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-11 16:51:09.150  INFO 6900 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-09-11 16:51:09.156  INFO 6900 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-09-11 16:51:09.206  INFO 6900 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-09-11 16:51:09.210  INFO 6900 --- [main] com.zick.SpringdemoApplication           : Started SpringdemoApplication in 3.879 seconds (JVM running for 4.728)
+2017-09-11 16:51:12.531  INFO 6900 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-11 16:51:12.531  INFO 6900 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-11 16:51:12.546  INFO 6900 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
