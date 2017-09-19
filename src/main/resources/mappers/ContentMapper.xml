@@ -17,7 +17,7 @@
       <arg column="support" jdbcType="INTEGER" javaType="java.lang.Integer" />
       <arg column="degrade" jdbcType="INTEGER" javaType="java.lang.Integer" />
       <arg column="title" jdbcType="VARCHAR" javaType="java.lang.String" />
-      <arg column="content" jdbcType="LONGVARCHAR" javaType="java.lang.String" />
+      <arg column="content" jdbcType="VARCHAR" javaType="java.lang.String" />
     </constructor>
   </resultMap>
   <sql id="Base_Column_List" >
@@ -127,4 +127,13 @@
       title = #{title,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
+  <select id="getAllContent" resultMap="ResultMapWithBLOBs">
+    SELECT * FROM zhihu_content
+  </select>
+
+  <select id="selectContentById" parameterType="java.lang.Integer" resultMap="ResultMapWithBLOBs">
+      SELECT * from zhihu_content
+      WHERE id = #{id}
+  </select>
 </mapper>

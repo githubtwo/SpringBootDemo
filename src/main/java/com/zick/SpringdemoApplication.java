@@ -21,8 +21,12 @@ import java.sql.SQLException;
 @SpringBootApplication
 @ServletComponentScan
 @MapperScan(basePackages = "com.zick.dao")
-public class SpringdemoApplication {
+public class SpringdemoApplication extends SpringBootServletInitializer{
 
+	/*@Override
+	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+		return application.sources(SpringdemoApplication.class);
+	}*/
 
 	public static void main(String[] args) {
 

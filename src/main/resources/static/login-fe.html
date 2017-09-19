@@ -41,16 +41,17 @@ body{
 
             $.ajax({
                 type:"GET",
-                url:"http://172.16.0.118:8080/user/login",
+                url:"/user/login",
                 dataType:"json",
                 data:{
                     username:$(".name-input").val(),
                     password:$(".password-input").val(),
                 },
+//                xhrFields:{withCredentials:true},
                 success:function(data){
                     if(!data.status){
-                        alert("登录成功");
-                        //document.cookie="user_id="+data.data.id;
+                        document.cookie="user_id="+data.data.id;
+                        document.cookie="title="+data.data.username;
                         window.location.href='announce.html';
                     }
                     //console.log(data.data);
@@ -68,17 +69,21 @@ body{
                 type:"GET",
                 url:"/user/register",
                 dataType:"json",
+                xhrFields:{withCredentials:true},
                 data:{
                     username:$(".name-input").val(),
                     password:$(".password-input").val(),
                 },
+                xhrFields:{withCredentials:true},
                 success:function(data){
                     if(!data.status){
                         alert("注册成功");
                         //window.location.href='announce.html';
+                    }else{
+                        alert("该用户已存在");
                     }
                     //console.log(data.data);
-                    $("#result").html(JSON.stringify(data.data) + "<br/>" + data.data.username);
+                    //$("#result").html(JSON.stringify(data.data) + "<br/>" + data.data.username);
                 },
                 error:function(jqXHR){
                     alert("发生错误:" + jqXHR.status);

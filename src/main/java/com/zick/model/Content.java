@@ -1,5 +1,8 @@
 package com.zick.model;
 
+import javax.persistence.Column;
+import javax.persistence.Table;
+
 public class Content {
     private Integer id;
 
@@ -13,7 +16,7 @@ public class Content {
 
     private String content;
 
-    public Content(Integer id, String userId, Integer support, Integer degrade, String title, String content) {
+    public Content(Integer id, String userId,Integer support, Integer degrade, String title, String content ) {
         this.id = id;
         this.userId = userId;
         this.support = support;

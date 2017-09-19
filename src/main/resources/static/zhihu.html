@@ -7,25 +7,25 @@
 </head>
 <body>
 	<!--列表-->
-	<div class="list-item">
-		<!--顶部-->
+	<!--<div class="list-item">
+		&lt;!&ndash;顶部&ndash;&gt;
 		<div class="from-tags">
 			<em>来自话题：</em>
 			<em>互联网</em>
 		</div>
-		<!--作者信息-->
+		&lt;!&ndash;作者信息&ndash;&gt;
 		<div class="author">
 			<img src="" />
 			<span class="name">路途很远，风景很美</span>
 			<span class="tags">飘荡的鱼</span>
 		</div>
-		<!--文章标题-->
+		&lt;!&ndash;文章标题&ndash;&gt;
 		<div class="article-title">如何看待王思聪骂林更新</div>
 		<div class="article-content wrapfix">
 			<img src="" />
 				<div class="text-content">
 					<em class="text"></em>
-					<!-- <i class="show-btn">[查看详情]</i> -->
+					&lt;!&ndash; <i class="show-btn">[查看详情]</i> &ndash;&gt;
 				</div>
 		</div>
 		<div class="edit">
@@ -37,7 +37,7 @@
 			<span class="thx">感谢</span>
 			<span>...</span>
 		</div>
-	</div>
+	</div>-->
 	<script type="text/javascript" src="js/jq.js"></script>
 	<script type="text/javascript">
 		var limit = 0 // 第一页开始
@@ -52,27 +52,34 @@
 		//请求
 		var getData =  function(){
 				$.ajax({
-					url: 'https://api.douban.com/v2/book/search?q=music&fields=all',
+					async:true,
+//					url: 'https://api.douban.com/v2/book/search?q=music&fields=all',
+					url:'/getAllContent',
 					type: 'get',
 					// data: {
 					// 	limit：limit,
 					// 	tonken: window.token // 一般会有一个安全验证的token
 					// },
-					dataType: 'jsonp', //跨域使用jsonp
+                    xhrFields:{withCredentials:true},
+					dataType: 'json', //跨域使用jsonp
 					success: function(data){
-						if( data.start === 0){
-							renderHtml(data.books);
+						if( data.status == 0){
+							renderHtml(data.data);
+							console.log(data.data);
 						}
-					}
+					},
+                    error:function(jqXHR){
+                        alert("发生错误:" + jqXHR.status);
+                    }
 				})
 			};
 		//渲染
 		var renderHtml =  function(data){
 				for(let i = 0; i < data.length; i++){
 					var html = '';
-						html += '<div class="list-item"><div class="from-tags"><em>来自话题：</em><em>互联网</em></div>';
-						html += '<div class="article-title">'+data[i].title+'</div><div class="article-content wrapfix"><img src='+data[i].image+' /><div class="text-content"><em class="text">'+data[i].summary+'</em></div></div>';
-						html += '<div class="edit"><button class="up" >'+ '<img src="img/up.png"></img>' + '<span class="increase">' + 0 + '</span>' +'</button><button class="down" >'+ '<img src="img/down.png"></img>' + '<span class="decrease">' + 0 + '</span>' +'</button>'+'<span class="evaluate" >'+ "22" +'<span class="increase">' + "评价" + '</span>' +'</span>'+ '<span class="collect">'+'<img class="img_collect" src="img/collect.png"></img>' + "收藏" +'</span></div>';
+						html += '<div class="list-item"><div class="from-tags"><em>来自话题：</em><em>' + data[i].title + '</em></div>';
+						html += '<div class="article-title">'+data[i].title+'</div><div class="article-content wrapfix"><img src='+data[i].image+' /><div class="text-content"><em class="text">'+data[i].content+'</em></div></div>';
+						html += '<div class="edit"><button class="up" >'+ '<img src="img/up.png"></img>' + '<span class="increase">' + data[i].support + '</span>' +'</button><button class="down" >'+ '<img src="img/down.png"></img>' + '<span class="decrease">' + data[i].degrade + '</span>' +'</button>'+'<span class="evaluate" >'+ "0" +'<span class="increase">' + "评价" + '</span>' +'</span>'+ '<span class="delete">'+'<img class="img_collect" ></img>' + "删除" +'</span></div>';
 
 					console.info(html);
 
@@ -81,27 +88,57 @@
 						var up = 0,down = 0;
 						var a = true;
 						$(".up").eq(index).on("click", function(){
-							if(a == true){
-								up = 0;
-								$(this).find(".increase").html( (++up));
-								a = false; 
-							}else{
-								$(this).find(".increase").html((++up));
-							}
+							$.ajax({
+								url:'/support',
+								type:'get',
+                                dataType:'json',
+                                xhrFields:{withCredentials:true},
+								data:{
+								    id:data[i].id,
+								},
+								success:function (data) {
+									console.log(data);
+                                }
+							});
+
 						});
 
 						$(".down").eq(index).on("click", function(){
-							if(a == true){
-								down = 0;
-								$(this).find(".decrease").html( (++down));
-								a = false; 
-							}else{
-								$(this).find(".decrease").html((++down));
-							}
+//							if(a == true){
+//								down = 0;
+//								$(this).find(".decrease").html( (++down));
+//								a = false;
+//							}else{
+//								$(this).find(".decrease").html((++down));
+//							}
+							$.ajax({
+                                url:'/degrade',
+                                type:'get',
+                                dataType:'json',
+                                xhrFields:{withCredentials:true},
+                                data:{
+                                    id:data[i].id,
+                                },
+                                success:function (data) {
+                                    console.log(data);
+                                }
+							});
 						});
 
-						$(".collect").eq(index).on("click",function(){
+						$(".delete").eq(index).on("click",function(){
 							console.log("hello");
+                            $.ajax({
+                                url:'/delete',
+                                type:'get',
+                                dataType:'json',
+                                xhrFields:{withCredentials:true},
+                                data:{
+                                    id:data[i].id,
+                                },
+                                success:function (data) {
+                                    console.log(data);
+                                }
+                            });
 						});
 
 					})(i)

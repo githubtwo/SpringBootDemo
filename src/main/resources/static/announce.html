@@ -40,18 +40,32 @@
 
 
     $(".annouuce").on("click",function () {
-        alert(getCookie("user_id"));
         $.ajax({
-            url: 'http://172.16.0.118:8080/announce',
+            url: '/release',
             type: 'get',
-//                data:{
-//                    user_id:
-//                }
+            datatype:'json',
+//            xhrFields:{withCredentials:true},
+            data: {
+                userId: getCookie("user_id"),
+                content: $(".content").val(),
+                support: 0,
+                degrade: 0,
+                title: getCookie("title"),
+            },
+            success:function(data){
+                console.log(getCookie("user_id"));
+                if(!data.status){
+                    window.location.href='zhihu.html';
+                }
+            },
+            error:function(jqXHR){
+                alert("发生错误:" + jqXHR.status);
+            }
         });
     });
 
     $(".home").on("click",function () {
-
+        window.location.href='/zhihu.html';
     });
 
     function getCookie(name)
@@ -61,7 +75,7 @@
             return unescape(arr[2]);
         else
             return null;
-    }
+    };
 </script>
 
 </html>
