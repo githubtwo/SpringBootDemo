@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>列表测试</title>
+	<link rel="stylesheet" type="text/css" href="css/list.css" />
+</head>
+<body>
+	<!--列表-->
+	<div class="list-item">
+		<!--顶部-->
+		<div class="from-tags">
+			<em>来自话题：</em>
+			<em>互联网</em>
+		</div>
+		<!--作者信息-->
+		<div class="author">
+			<img src="" />
+			<span class="name">路途很远，风景很美</span>
+			<span class="tags">飘荡的鱼</span>
+		</div>
+		<!--文章标题-->
+		<div class="article-title">如何看待王思聪骂林更新</div>
+		<div class="article-content wrapfix">
+			<img src="" />
+				<div class="text-content">
+					<em class="text"></em>
+					<!-- <i class="show-btn">[查看详情]</i> -->
+				</div>
+		</div>
+		<div class="edit">
+			<span class="up">0</span>
+			<span class="down">下</span>
+			<span class="pl">0评论</span>
+			<span class="share"></span>
+			<span class="concat">收藏</span>
+			<span class="thx">感谢</span>
+			<span>...</span>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jq.js"></script>
+	<script type="text/javascript">
+		var limit = 0 // 第一页开始
+		
+		// //分段请求
+		// var  postData = function(){
+		// 		//这里写一个监听到底部的方法，然后调用传参给getData
+		// 		getData(limit);
+		// };
+
+
+		//请求
+		var getData =  function(){
+				$.ajax({
+					url: 'https://api.douban.com/v2/book/search?q=music&fields=all',
+					type: 'get',
+					// data: {
+					// 	limit：limit,
+					// 	tonken: window.token // 一般会有一个安全验证的token
+					// },
+					dataType: 'jsonp', //跨域使用jsonp
+					success: function(data){
+						if( data.start === 0){
+							renderHtml(data.books);
+						}
+					}
+				})
+			};
+		//渲染
+		var renderHtml =  function(data){
+				for(let i = 0; i < data.length; i++){
+					var html = '';
+						html += '<div class="list-item"><div class="from-tags"><em>来自话题：</em><em>互联网</em></div>';
+						html += '<div class="article-title">'+data[i].title+'</div><div class="article-content wrapfix"><img src='+data[i].image+' /><div class="text-content"><em class="text">'+data[i].summary+'</em></div></div>';
+						html += '<div class="edit"><button class="up" >'+ '<img src="img/up.png"></img>' + '<span class="increase">' + 0 + '</span>' +'</button><button class="down" >'+ '<img src="img/down.png"></img>' + '<span class="decrease">' + 0 + '</span>' +'</button>'+'<span class="evaluate" >'+ "22" +'<span class="increase">' + "评价" + '</span>' +'</span>'+ '<span class="collect">'+'<img class="img_collect" src="img/collect.png"></img>' + "收藏" +'</span></div>';
+
+					console.info(html);
+
+					$("body").append(html);
+					(function (index){
+						var up = 0,down = 0;
+						var a = true;
+						$(".up").eq(index).on("click", function(){
+							if(a == true){
+								up = 0;
+								$(this).find(".increase").html( (++up));
+								a = false; 
+							}else{
+								$(this).find(".increase").html((++up));
+							}
+						});
+
+						$(".down").eq(index).on("click", function(){
+							if(a == true){
+								down = 0;
+								$(this).find(".decrease").html( (++down));
+								a = false; 
+							}else{
+								$(this).find(".decrease").html((++down));
+							}
+						});
+
+						$(".collect").eq(index).on("click",function(){
+							console.log("hello");
+						});
+
+					})(i)
+				}
+				
+		};
+		getData();
+	</script>
+</body>
+</html>

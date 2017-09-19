@@ -18,23 +18,23 @@
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
     select 
     <include refid="Base_Column_List" />
-    from tb_user
+    from zhihu_user
     where id = #{id,jdbcType=VARCHAR}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
-    delete from tb_user
+    delete from zhihu_user
     where id = #{id,jdbcType=VARCHAR}
   </delete>
   <insert id="insert" parameterType="com.zick.model.User" >
-    insert into tb_user (id, username, password, 
-      phone, create_time, update_time, 
+    insert into zhihu_user (id, username, password,
+      phone, create_time, update_time,
       img)
-    values (#{id,jdbcType=VARCHAR}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
-      #{phone,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP}, 
+    values (#{id,jdbcType=VARCHAR}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR},
+      #{phone,jdbcType=VARCHAR}, now(), now(),
       #{img,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.zick.model.User" >
-    insert into tb_user
+    insert into zhihu_user
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
         id,
@@ -72,10 +72,10 @@
         #{phone,jdbcType=VARCHAR},
       </if>
       <if test="createTime != null" >
-        #{createTime,jdbcType=TIMESTAMP},
+        now(),
       </if>
       <if test="updateTime != null" >
-        #{updateTime,jdbcType=TIMESTAMP},
+        now(),
       </if>
       <if test="img != null" >
         #{img,jdbcType=VARCHAR},
@@ -83,7 +83,7 @@
     </trim>
   </insert>
   <update id="updateByPrimaryKeySelective" parameterType="com.zick.model.User" >
-    update tb_user
+    update zhihu_user
     <set >
       <if test="username != null" >
         username = #{username,jdbcType=VARCHAR},
@@ -98,7 +98,7 @@
         create_time = #{createTime,jdbcType=TIMESTAMP},
       </if>
       <if test="updateTime != null" >
-        update_time = #{updateTime,jdbcType=TIMESTAMP},
+        update_time = now(),
       </if>
       <if test="img != null" >
         img = #{img,jdbcType=VARCHAR},
@@ -107,7 +107,7 @@
     where id = #{id,jdbcType=VARCHAR}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.zick.model.User" >
-    update tb_user
+    update zhihu_user
     set username = #{username,jdbcType=VARCHAR},
       password = #{password,jdbcType=VARCHAR},
       phone = #{phone,jdbcType=VARCHAR},
@@ -118,18 +118,18 @@
   </update>
 
   <select id="checkUsername" parameterType="String" resultType="int">
-    SELECT count(1) from tb_user
+    SELECT count(1) from zhihu_user
     WHERE username = #{username}
   </select>
 
   <select id="selectLogin" parameterType="map" resultMap="BaseResultMap">
     SELECT <include refid="Base_Column_List"/>
-    FROM tb_user
+    FROM zhihu_user
     WHERE username=#{username}
     and password  =#{password}
   </select>
 
   <select id="getAll" resultMap="BaseResultMap">
-    SELECT * from tb_user
+    SELECT * from zhihu_user
   </select>
 </mapper>

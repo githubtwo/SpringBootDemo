@@ -10,11 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("thymeleaf")
 public class ThymeleafTestController {
 
-    @RequestMapping("login")
-    public String getHome(){
-
-        return "login";
-    }
+//    @RequestMapping("login")
+//    public String getHome(){
+//
+//        return "login";
+//    }
 
     @GetMapping("git")
     public String getGit(){

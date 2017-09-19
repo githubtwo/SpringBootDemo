@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        body{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            background-color: #fff;
+            /*width:30%;*/
+            /*height: 40%;*/
+            /*border:1px solid red;*/
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            line-height: 2em;
+        }
+        .content{
+            width:300px;
+            height:160px;
+        }
+
+    </style>
+</head>
+<body>
+    <label >写下你的内容</label>
+    <div>
+        <textarea name="a" class="content">这里写内容</textarea>
+
+    </div>
+    <div align="center">
+        <button class="annouuce" >发布</button>
+        <button class="home" >首页</button>
+    </div>
+
+</body>
+<script type="text/javascript" src="js/jq.js"></script>
+<script type="text/javascript">
+
+
+    $(".annouuce").on("click",function () {
+        alert(getCookie("user_id"));
+        $.ajax({
+            url: 'http://172.16.0.118:8080/announce',
+            type: 'get',
+//                data:{
+//                    user_id:
+//                }
+        });
+    });
+
+    $(".home").on("click",function () {
+
+    });
+
+    function getCookie(name)
+    {
+        var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+        if(arr=document.cookie.match(reg))
+            return unescape(arr[2]);
+        else
+            return null;
+    }
+</script>
+
+</html>

@@ -1,0 +1,19 @@
+body{
+    text-align:center;
+    /* margin:0 auto;
+    width:400px;
+    height:100px;
+    border:1px solid #F00*/
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    width:30%;
+    height: 40%;
+    /*border:1px solid red;*/
+    -webkit-transform: translateX(-50%) translateY(-50%);
+}
+.login-box{
+    border:1px solid #F00;
+}
