@@ -19574,3 +19574,556 @@ java.lang.NoSuchMethodError: ch.qos.logback.classic.LoggerContext.removeObject(L
 2017-09-19 18:26:10.067  INFO 39952 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
 2017-09-19 18:26:10.118  INFO 39952 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
 2017-09-19 18:26:10.124  INFO 39952 --- [main] com.zick.SpringdemoApplication           : Started SpringdemoApplication in 4.399 seconds (JVM running for 5.188)
+2017-09-20 14:40:38.773  INFO 12572 --- [main] com.zick.SpringdemoApplication           : Starting SpringdemoApplication on lp-PC with PID 12572 (D:\File\IdeaProjects\SpringBootDemo\target\classes started by Administrator in D:\File\IdeaProjects\SpringBootDemo)
+2017-09-20 14:40:38.778  INFO 12572 --- [main] com.zick.SpringdemoApplication           : No active profile set, falling back to default profiles: default
+2017-09-20 14:40:39.084  INFO 12572 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f1c7bf6: startup date [Wed Sep 20 14:40:39 CST 2017]; root of context hierarchy
+2017-09-20 14:40:39.883  INFO 12572 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-20 14:40:40.737  INFO 12572 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-09-20 14:40:40.749  INFO 12572 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-09-20 14:40:40.750  INFO 12572 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-20 14:40:40.857  INFO 12572 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-20 14:40:40.858  INFO 12572 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1779 ms
+2017-09-20 14:40:41.059  INFO 12572 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-20 14:40:41.061  INFO 12572 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'com.zick.config.druid.DruidStatViewServlet' to [/druid/*]
+2017-09-20 14:40:41.065  INFO 12572 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-20 14:40:41.066  INFO 12572 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-20 14:40:41.066  INFO 12572 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-20 14:40:41.066  INFO 12572 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-20 14:40:41.066  INFO 12572 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2017-09-20 14:40:41.066  INFO 12572 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2017-09-20 14:40:41.959  INFO 12572 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f1c7bf6: startup date [Wed Sep 20 14:40:39 CST 2017]; root of context hierarchy
+2017-09-20 14:40:42.019  INFO 12572 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/delete],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.delete(int,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:40:42.020  INFO 12572 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/release],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.insert(com.zick.model.Content,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:40:42.020  INFO 12572 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/support],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.support(int,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:40:42.021  INFO 12572 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAllContent],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.getAllContent(javax.servlet.http.HttpServletResponse)
+2017-09-20 14:40:42.021  INFO 12572 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/degrade],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.degrade(int,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:40:42.022  INFO 12572 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/set],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisSet(java.lang.String)
+2017-09-20 14:40:42.023  INFO 12572 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAll]}" onto public com.zick.common.ServerResponse<java.util.List<com.zick.model.User>> com.zick.controller.ExampleController.users()
+2017-09-20 14:40:42.024  INFO 12572 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/get],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisGet()
+2017-09-20 14:40:42.025  INFO 12572 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/thymeleaf/git],methods=[GET]}" onto public java.lang.String com.zick.controller.ThymeleafTestController.getGit()
+2017-09-20 14:40:42.027  INFO 12572 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/register],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.register(com.zick.model.User,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:40:42.027  INFO 12572 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/hello],methods=[GET]}" onto public java.lang.String com.zick.controller.UserController.sayHello()
+2017-09-20 14:40:42.027  INFO 12572 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.login(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession,java.lang.String,java.lang.String)
+2017-09-20 14:40:42.030  INFO 12572 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-20 14:40:42.030  INFO 12572 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:40:42.066  INFO 12572 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 14:40:42.067  INFO 12572 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 14:40:42.125  INFO 12572 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 14:40:42.847  WARN 12572 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2017-09-20 14:40:42.917  INFO 12572 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-20 14:40:42.919  INFO 12572 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-09-20 14:40:42.926  INFO 12572 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-09-20 14:40:42.981  INFO 12572 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-09-20 14:40:42.986  INFO 12572 --- [main] com.zick.SpringdemoApplication           : Started SpringdemoApplication in 4.478 seconds (JVM running for 6.657)
+2017-09-20 14:40:47.847  INFO 12572 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-20 14:40:47.847  INFO 12572 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-20 14:40:47.866  INFO 12572 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2017-09-20 14:42:20.917  INFO 16788 --- [main] com.zick.SpringdemoApplication           : Starting SpringdemoApplication on lp-PC with PID 16788 (D:\File\IdeaProjects\SpringBootDemo\target\classes started by Administrator in D:\File\IdeaProjects\SpringBootDemo)
+2017-09-20 14:42:20.920  INFO 16788 --- [main] com.zick.SpringdemoApplication           : No active profile set, falling back to default profiles: default
+2017-09-20 14:42:21.243  INFO 16788 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25b485ba: startup date [Wed Sep 20 14:42:21 CST 2017]; root of context hierarchy
+2017-09-20 14:42:21.982  INFO 16788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-20 14:42:22.780  INFO 16788 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-09-20 14:42:22.790  INFO 16788 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-09-20 14:42:22.791  INFO 16788 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-20 14:42:22.883  INFO 16788 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-20 14:42:22.884  INFO 16788 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1644 ms
+2017-09-20 14:42:23.065  INFO 16788 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-20 14:42:23.067  INFO 16788 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'com.zick.config.druid.DruidStatViewServlet' to [/druid/*]
+2017-09-20 14:42:23.070  INFO 16788 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-20 14:42:23.071  INFO 16788 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-20 14:42:23.072  INFO 16788 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-20 14:42:23.072  INFO 16788 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-20 14:42:23.072  INFO 16788 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2017-09-20 14:42:23.072  INFO 16788 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2017-09-20 14:42:23.852  INFO 16788 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25b485ba: startup date [Wed Sep 20 14:42:21 CST 2017]; root of context hierarchy
+2017-09-20 14:42:23.905  INFO 16788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/delete],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.delete(int,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:42:23.906  INFO 16788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/release],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.insert(com.zick.model.Content,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:42:23.907  INFO 16788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAllContent],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.getAllContent(javax.servlet.http.HttpServletResponse)
+2017-09-20 14:42:23.907  INFO 16788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/support],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.support(int,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:42:23.907  INFO 16788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/degrade],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.degrade(int,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:42:23.908  INFO 16788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/set],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisSet(java.lang.String)
+2017-09-20 14:42:23.909  INFO 16788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAll]}" onto public com.zick.common.ServerResponse<java.util.List<com.zick.model.User>> com.zick.controller.ExampleController.users()
+2017-09-20 14:42:23.909  INFO 16788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/get],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisGet()
+2017-09-20 14:42:23.910  INFO 16788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/thymeleaf/git],methods=[GET]}" onto public java.lang.String com.zick.controller.ThymeleafTestController.getGit()
+2017-09-20 14:42:23.912  INFO 16788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/register],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.register(com.zick.model.User,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:42:23.912  INFO 16788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/hello],methods=[GET]}" onto public java.lang.String com.zick.controller.UserController.sayHello()
+2017-09-20 14:42:23.912  INFO 16788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.login(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession,java.lang.String,java.lang.String)
+2017-09-20 14:42:23.915  INFO 16788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-20 14:42:23.915  INFO 16788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:42:23.947  INFO 16788 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 14:42:23.947  INFO 16788 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 14:42:23.983  INFO 16788 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 14:42:24.650  WARN 16788 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2017-09-20 14:42:24.721  INFO 16788 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-20 14:42:24.723  INFO 16788 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-09-20 14:42:24.729  INFO 16788 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-09-20 14:42:24.785  INFO 16788 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-09-20 14:42:24.790  INFO 16788 --- [main] com.zick.SpringdemoApplication           : Started SpringdemoApplication in 4.564 seconds (JVM running for 5.641)
+2017-09-20 14:42:31.889  INFO 16788 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-20 14:42:31.889  INFO 16788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-20 14:42:31.904  INFO 16788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2017-09-20 14:46:42.346  INFO 12196 --- [main] com.zick.SpringdemoApplication           : Starting SpringdemoApplication on lp-PC with PID 12196 (D:\File\IdeaProjects\SpringBootDemo\target\classes started by Administrator in D:\File\IdeaProjects\SpringBootDemo)
+2017-09-20 14:46:42.349  INFO 12196 --- [main] com.zick.SpringdemoApplication           : No active profile set, falling back to default profiles: default
+2017-09-20 14:46:42.720  INFO 12196 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@20d3d15a: startup date [Wed Sep 20 14:46:42 CST 2017]; root of context hierarchy
+2017-09-20 14:46:43.491  INFO 12196 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-20 14:46:44.278  INFO 12196 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-09-20 14:46:44.288  INFO 12196 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-09-20 14:46:44.289  INFO 12196 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-20 14:46:44.508  INFO 12196 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-09-20 14:46:44.511  INFO 12196 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-20 14:46:44.511  INFO 12196 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1794 ms
+2017-09-20 14:46:44.690  INFO 12196 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-20 14:46:44.691  INFO 12196 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'com.zick.config.druid.DruidStatViewServlet' to [/druid/*]
+2017-09-20 14:46:44.695  INFO 12196 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-20 14:46:44.695  INFO 12196 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-20 14:46:44.695  INFO 12196 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-20 14:46:44.695  INFO 12196 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-20 14:46:44.696  INFO 12196 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2017-09-20 14:46:44.696  INFO 12196 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2017-09-20 14:46:45.473  INFO 12196 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@20d3d15a: startup date [Wed Sep 20 14:46:42 CST 2017]; root of context hierarchy
+2017-09-20 14:46:45.527  INFO 12196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/delete],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.delete(int,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:46:45.528  INFO 12196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/release],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.insert(com.zick.model.Content,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:46:45.528  INFO 12196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/support],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.support(int,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:46:45.529  INFO 12196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAllContent],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.getAllContent(javax.servlet.http.HttpServletResponse)
+2017-09-20 14:46:45.529  INFO 12196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/degrade],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.degrade(int,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:46:45.530  INFO 12196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/set],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisSet(java.lang.String)
+2017-09-20 14:46:45.530  INFO 12196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAll]}" onto public com.zick.common.ServerResponse<java.util.List<com.zick.model.User>> com.zick.controller.ExampleController.users()
+2017-09-20 14:46:45.531  INFO 12196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/get],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisGet()
+2017-09-20 14:46:45.532  INFO 12196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/thymeleaf/git],methods=[GET]}" onto public java.lang.String com.zick.controller.ThymeleafTestController.getGit()
+2017-09-20 14:46:45.533  INFO 12196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/register],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.register(com.zick.model.User,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:46:45.533  INFO 12196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/hello],methods=[GET]}" onto public java.lang.String com.zick.controller.UserController.sayHello()
+2017-09-20 14:46:45.534  INFO 12196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.login(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession,java.lang.String,java.lang.String)
+2017-09-20 14:46:45.536  INFO 12196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-20 14:46:45.537  INFO 12196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:46:45.568  INFO 12196 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 14:46:45.568  INFO 12196 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 14:46:45.604  INFO 12196 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 14:46:46.275  WARN 12196 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2017-09-20 14:46:46.343  INFO 12196 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-20 14:46:46.345  INFO 12196 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-09-20 14:46:46.350  INFO 12196 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-09-20 14:46:46.411  INFO 12196 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-09-20 14:46:46.415  INFO 12196 --- [main] com.zick.SpringdemoApplication           : Started SpringdemoApplication in 4.471 seconds (JVM running for 5.907)
+2017-09-20 14:46:53.337  INFO 12196 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-20 14:46:53.337  INFO 12196 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-20 14:46:53.353  INFO 12196 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2017-09-20 14:48:41.964  INFO 16540 --- [main] com.zick.SpringdemoApplication           : Starting SpringdemoApplication on lp-PC with PID 16540 (D:\File\IdeaProjects\SpringBootDemo\target\classes started by Administrator in D:\File\IdeaProjects\SpringBootDemo)
+2017-09-20 14:48:41.968  INFO 16540 --- [main] com.zick.SpringdemoApplication           : No active profile set, falling back to default profiles: default
+2017-09-20 14:48:42.339  INFO 16540 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2c34f934: startup date [Wed Sep 20 14:48:42 CST 2017]; root of context hierarchy
+2017-09-20 14:48:43.097  INFO 16540 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-20 14:48:43.865  INFO 16540 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-09-20 14:48:43.875  INFO 16540 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-09-20 14:48:43.876  INFO 16540 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-20 14:48:44.134  INFO 16540 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-09-20 14:48:44.138  INFO 16540 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-20 14:48:44.138  INFO 16540 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1803 ms
+2017-09-20 14:48:44.317  INFO 16540 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-20 14:48:44.318  INFO 16540 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'com.zick.config.druid.DruidStatViewServlet' to [/druid/*]
+2017-09-20 14:48:44.321  INFO 16540 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-20 14:48:44.322  INFO 16540 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-20 14:48:44.322  INFO 16540 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-20 14:48:44.323  INFO 16540 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-20 14:48:44.323  INFO 16540 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2017-09-20 14:48:44.323  INFO 16540 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2017-09-20 14:48:45.129  INFO 16540 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2c34f934: startup date [Wed Sep 20 14:48:42 CST 2017]; root of context hierarchy
+2017-09-20 14:48:45.188  INFO 16540 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/delete],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.delete(int,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:48:45.189  INFO 16540 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/release],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.insert(com.zick.model.Content,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:48:45.189  INFO 16540 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAllContent],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.getAllContent(javax.servlet.http.HttpServletResponse)
+2017-09-20 14:48:45.190  INFO 16540 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/support],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.support(int,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:48:45.190  INFO 16540 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/degrade],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.degrade(int,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:48:45.191  INFO 16540 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/set],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisSet(java.lang.String)
+2017-09-20 14:48:45.191  INFO 16540 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAll]}" onto public com.zick.common.ServerResponse<java.util.List<com.zick.model.User>> com.zick.controller.ExampleController.users()
+2017-09-20 14:48:45.192  INFO 16540 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/get],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisGet()
+2017-09-20 14:48:45.192  INFO 16540 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/thymeleaf/git],methods=[GET]}" onto public java.lang.String com.zick.controller.ThymeleafTestController.getGit()
+2017-09-20 14:48:45.194  INFO 16540 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/register],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.register(com.zick.model.User,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:48:45.194  INFO 16540 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/hello],methods=[GET]}" onto public java.lang.String com.zick.controller.UserController.sayHello()
+2017-09-20 14:48:45.195  INFO 16540 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.login(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession,java.lang.String,java.lang.String)
+2017-09-20 14:48:45.197  INFO 16540 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-20 14:48:45.198  INFO 16540 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:48:45.233  INFO 16540 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 14:48:45.234  INFO 16540 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 14:48:45.280  INFO 16540 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 14:48:46.014  WARN 16540 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2017-09-20 14:48:46.084  INFO 16540 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-20 14:48:46.085  INFO 16540 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-09-20 14:48:46.091  INFO 16540 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-09-20 14:48:46.150  INFO 16540 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-09-20 14:48:46.155  INFO 16540 --- [main] com.zick.SpringdemoApplication           : Started SpringdemoApplication in 4.67 seconds (JVM running for 5.817)
+2017-09-20 14:49:11.291  INFO 16540 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-20 14:49:11.292  INFO 16540 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-20 14:49:11.307  INFO 16540 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2017-09-20 14:51:26.446  INFO 16396 --- [main] com.zick.SpringdemoApplication           : Starting SpringdemoApplication on lp-PC with PID 16396 (D:\File\IdeaProjects\SpringBootDemo\target\classes started by Administrator in D:\File\IdeaProjects\SpringBootDemo)
+2017-09-20 14:51:26.449  INFO 16396 --- [main] com.zick.SpringdemoApplication           : No active profile set, falling back to default profiles: default
+2017-09-20 14:51:27.023  INFO 16396 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25a65b77: startup date [Wed Sep 20 14:51:27 CST 2017]; root of context hierarchy
+2017-09-20 14:51:28.138  INFO 16396 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-20 14:51:29.152  INFO 16396 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-09-20 14:51:29.163  INFO 16396 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-09-20 14:51:29.165  INFO 16396 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-20 14:51:29.450  INFO 16396 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-09-20 14:51:29.454  INFO 16396 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-20 14:51:29.455  INFO 16396 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2437 ms
+2017-09-20 14:51:29.647  INFO 16396 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-20 14:51:29.648  INFO 16396 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'com.zick.config.druid.DruidStatViewServlet' to [/druid/*]
+2017-09-20 14:51:29.652  INFO 16396 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-20 14:51:29.653  INFO 16396 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-20 14:51:29.653  INFO 16396 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-20 14:51:29.653  INFO 16396 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-20 14:51:29.653  INFO 16396 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2017-09-20 14:51:29.654  INFO 16396 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2017-09-20 14:51:30.472  INFO 16396 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25a65b77: startup date [Wed Sep 20 14:51:27 CST 2017]; root of context hierarchy
+2017-09-20 14:51:30.531  INFO 16396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/delete],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.delete(int,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:51:30.532  INFO 16396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/release],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.insert(com.zick.model.Content,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:51:30.533  INFO 16396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/support],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.support(int,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:51:30.533  INFO 16396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/degrade],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.degrade(int,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:51:30.533  INFO 16396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAllContent],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.getAllContent(javax.servlet.http.HttpServletResponse)
+2017-09-20 14:51:30.534  INFO 16396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/set],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisSet(java.lang.String)
+2017-09-20 14:51:30.535  INFO 16396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAll]}" onto public com.zick.common.ServerResponse<java.util.List<com.zick.model.User>> com.zick.controller.ExampleController.users()
+2017-09-20 14:51:30.535  INFO 16396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/get],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisGet()
+2017-09-20 14:51:30.536  INFO 16396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/thymeleaf/git],methods=[GET]}" onto public java.lang.String com.zick.controller.ThymeleafTestController.getGit()
+2017-09-20 14:51:30.537  INFO 16396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/register],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.register(com.zick.model.User,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:51:30.538  INFO 16396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/hello],methods=[GET]}" onto public java.lang.String com.zick.controller.UserController.sayHello()
+2017-09-20 14:51:30.538  INFO 16396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.login(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession,java.lang.String,java.lang.String)
+2017-09-20 14:51:30.541  INFO 16396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-20 14:51:30.541  INFO 16396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:51:30.574  INFO 16396 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 14:51:30.574  INFO 16396 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 14:51:30.610  INFO 16396 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 14:51:31.316  WARN 16396 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2017-09-20 14:51:31.384  INFO 16396 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-20 14:51:31.385  INFO 16396 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-09-20 14:51:31.391  INFO 16396 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-09-20 14:51:31.449  INFO 16396 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-09-20 14:51:31.454  INFO 16396 --- [main] com.zick.SpringdemoApplication           : Started SpringdemoApplication in 5.365 seconds (JVM running for 6.283)
+2017-09-20 14:52:32.743  INFO 16396 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-20 14:52:32.744  INFO 16396 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-20 14:52:32.768  INFO 16396 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2017-09-20 14:53:36.900  INFO 18960 --- [main] com.zick.SpringdemoApplication           : Starting SpringdemoApplication on lp-PC with PID 18960 (D:\File\IdeaProjects\SpringBootDemo\target\classes started by Administrator in D:\File\IdeaProjects\SpringBootDemo)
+2017-09-20 14:53:36.905  INFO 18960 --- [main] com.zick.SpringdemoApplication           : No active profile set, falling back to default profiles: default
+2017-09-20 14:53:37.319  INFO 18960 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@12d3a4e9: startup date [Wed Sep 20 14:53:37 CST 2017]; root of context hierarchy
+2017-09-20 14:53:39.093  INFO 18960 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-20 14:53:40.359  INFO 18960 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-09-20 14:53:40.368  INFO 18960 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-09-20 14:53:40.369  INFO 18960 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-20 14:53:40.628  INFO 18960 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-09-20 14:53:40.633  INFO 18960 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-20 14:53:40.633  INFO 18960 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3317 ms
+2017-09-20 14:53:40.835  INFO 18960 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-20 14:53:40.836  INFO 18960 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'com.zick.config.druid.DruidStatViewServlet' to [/druid/*]
+2017-09-20 14:53:40.839  INFO 18960 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-20 14:53:40.840  INFO 18960 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-20 14:53:40.840  INFO 18960 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-20 14:53:40.840  INFO 18960 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-20 14:53:40.841  INFO 18960 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2017-09-20 14:53:40.841  INFO 18960 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2017-09-20 14:53:41.619  INFO 18960 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@12d3a4e9: startup date [Wed Sep 20 14:53:37 CST 2017]; root of context hierarchy
+2017-09-20 14:53:41.673  INFO 18960 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/delete],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.delete(int,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:53:41.674  INFO 18960 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/release],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.insert(com.zick.model.Content,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:53:41.674  INFO 18960 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAllContent],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.getAllContent(javax.servlet.http.HttpServletResponse)
+2017-09-20 14:53:41.674  INFO 18960 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/support],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.support(int,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:53:41.675  INFO 18960 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/degrade],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.degrade(int,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:53:41.676  INFO 18960 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/set],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisSet(java.lang.String)
+2017-09-20 14:53:41.676  INFO 18960 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAll]}" onto public com.zick.common.ServerResponse<java.util.List<com.zick.model.User>> com.zick.controller.ExampleController.users()
+2017-09-20 14:53:41.676  INFO 18960 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/get],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisGet()
+2017-09-20 14:53:41.677  INFO 18960 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/thymeleaf/git],methods=[GET]}" onto public java.lang.String com.zick.controller.ThymeleafTestController.getGit()
+2017-09-20 14:53:41.679  INFO 18960 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/register],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.register(com.zick.model.User,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:53:41.679  INFO 18960 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/hello],methods=[GET]}" onto public java.lang.String com.zick.controller.UserController.sayHello()
+2017-09-20 14:53:41.679  INFO 18960 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.login(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession,java.lang.String,java.lang.String)
+2017-09-20 14:53:41.681  INFO 18960 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-20 14:53:41.682  INFO 18960 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:53:41.714  INFO 18960 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 14:53:41.714  INFO 18960 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 14:53:41.750  INFO 18960 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 14:53:42.467  WARN 18960 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2017-09-20 14:53:42.536  INFO 18960 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-20 14:53:42.538  INFO 18960 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-09-20 14:53:42.544  INFO 18960 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-09-20 14:53:42.605  INFO 18960 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-09-20 14:53:42.609  INFO 18960 --- [main] com.zick.SpringdemoApplication           : Started SpringdemoApplication in 6.03 seconds (JVM running for 7.063)
+2017-09-20 14:53:44.508  INFO 18960 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-20 14:53:44.508  INFO 18960 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-20 14:53:44.531  INFO 18960 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2017-09-20 14:53:58.567  INFO 16424 --- [main] com.zick.SpringdemoApplication           : Starting SpringdemoApplication on lp-PC with PID 16424 (D:\File\IdeaProjects\SpringBootDemo\target\classes started by Administrator in D:\File\IdeaProjects\SpringBootDemo)
+2017-09-20 14:53:58.570  INFO 16424 --- [main] com.zick.SpringdemoApplication           : No active profile set, falling back to default profiles: default
+2017-09-20 14:53:58.959  INFO 16424 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25b485ba: startup date [Wed Sep 20 14:53:58 CST 2017]; root of context hierarchy
+2017-09-20 14:53:59.855  INFO 16424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-20 14:54:00.602  INFO 16424 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-09-20 14:54:00.611  INFO 16424 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-09-20 14:54:00.612  INFO 16424 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-20 14:54:00.703  INFO 16424 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-20 14:54:00.703  INFO 16424 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1747 ms
+2017-09-20 14:54:00.886  INFO 16424 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-20 14:54:00.888  INFO 16424 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'com.zick.config.druid.DruidStatViewServlet' to [/druid/*]
+2017-09-20 14:54:00.891  INFO 16424 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-20 14:54:00.891  INFO 16424 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-20 14:54:00.891  INFO 16424 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-20 14:54:00.892  INFO 16424 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-20 14:54:00.892  INFO 16424 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2017-09-20 14:54:00.892  INFO 16424 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2017-09-20 14:54:01.678  INFO 16424 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25b485ba: startup date [Wed Sep 20 14:53:58 CST 2017]; root of context hierarchy
+2017-09-20 14:54:01.732  INFO 16424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/delete],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.delete(int,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:54:01.733  INFO 16424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/release],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.insert(com.zick.model.Content,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:54:01.734  INFO 16424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/support],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.support(int,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:54:01.734  INFO 16424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAllContent],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.getAllContent(javax.servlet.http.HttpServletResponse)
+2017-09-20 14:54:01.734  INFO 16424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/degrade],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.degrade(int,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:54:01.735  INFO 16424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/set],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisSet(java.lang.String)
+2017-09-20 14:54:01.736  INFO 16424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAll]}" onto public com.zick.common.ServerResponse<java.util.List<com.zick.model.User>> com.zick.controller.ExampleController.users()
+2017-09-20 14:54:01.736  INFO 16424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/get],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisGet()
+2017-09-20 14:54:01.737  INFO 16424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/thymeleaf/git],methods=[GET]}" onto public java.lang.String com.zick.controller.ThymeleafTestController.getGit()
+2017-09-20 14:54:01.739  INFO 16424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/register],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.register(com.zick.model.User,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:54:01.739  INFO 16424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/hello],methods=[GET]}" onto public java.lang.String com.zick.controller.UserController.sayHello()
+2017-09-20 14:54:01.740  INFO 16424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.login(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession,java.lang.String,java.lang.String)
+2017-09-20 14:54:01.742  INFO 16424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-20 14:54:01.743  INFO 16424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:54:01.775  INFO 16424 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 14:54:01.775  INFO 16424 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 14:54:01.827  INFO 16424 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 14:54:02.476  WARN 16424 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2017-09-20 14:54:02.545  INFO 16424 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-20 14:54:02.548  INFO 16424 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-09-20 14:54:02.554  INFO 16424 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-09-20 14:54:02.609  INFO 16424 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-09-20 14:54:02.614  INFO 16424 --- [main] com.zick.SpringdemoApplication           : Started SpringdemoApplication in 4.309 seconds (JVM running for 5.161)
+2017-09-20 14:54:10.337  INFO 16424 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-20 14:54:10.337  INFO 16424 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-20 14:54:10.353  INFO 16424 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2017-09-20 14:54:40.417  INFO 15384 --- [main] com.zick.SpringdemoApplication           : Starting SpringdemoApplication on lp-PC with PID 15384 (D:\File\IdeaProjects\SpringBootDemo\target\classes started by Administrator in D:\File\IdeaProjects\SpringBootDemo)
+2017-09-20 14:54:40.421  INFO 15384 --- [main] com.zick.SpringdemoApplication           : No active profile set, falling back to default profiles: default
+2017-09-20 14:54:40.753  INFO 15384 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@20d3d15a: startup date [Wed Sep 20 14:54:40 CST 2017]; root of context hierarchy
+2017-09-20 14:54:41.801  INFO 15384 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-20 14:54:42.564  INFO 15384 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-09-20 14:54:42.574  INFO 15384 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-09-20 14:54:42.575  INFO 15384 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-20 14:54:42.822  INFO 15384 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-09-20 14:54:42.825  INFO 15384 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-20 14:54:42.825  INFO 15384 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2075 ms
+2017-09-20 14:54:43.003  INFO 15384 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-20 14:54:43.005  INFO 15384 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'com.zick.config.druid.DruidStatViewServlet' to [/druid/*]
+2017-09-20 14:54:43.008  INFO 15384 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-20 14:54:43.008  INFO 15384 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-20 14:54:43.009  INFO 15384 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-20 14:54:43.009  INFO 15384 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-20 14:54:43.009  INFO 15384 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2017-09-20 14:54:43.009  INFO 15384 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2017-09-20 14:54:43.814  INFO 15384 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@20d3d15a: startup date [Wed Sep 20 14:54:40 CST 2017]; root of context hierarchy
+2017-09-20 14:54:43.869  INFO 15384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/delete],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.delete(int,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:54:43.870  INFO 15384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/release],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.insert(com.zick.model.Content,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:54:43.871  INFO 15384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAllContent],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.getAllContent(javax.servlet.http.HttpServletResponse)
+2017-09-20 14:54:43.871  INFO 15384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/support],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.support(int,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:54:43.871  INFO 15384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/degrade],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.degrade(int,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:54:43.872  INFO 15384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/set],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisSet(java.lang.String)
+2017-09-20 14:54:43.873  INFO 15384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAll]}" onto public com.zick.common.ServerResponse<java.util.List<com.zick.model.User>> com.zick.controller.ExampleController.users()
+2017-09-20 14:54:43.873  INFO 15384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/get],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisGet()
+2017-09-20 14:54:43.874  INFO 15384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/thymeleaf/git],methods=[GET]}" onto public java.lang.String com.zick.controller.ThymeleafTestController.getGit()
+2017-09-20 14:54:43.875  INFO 15384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/register],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.register(com.zick.model.User,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:54:43.876  INFO 15384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/hello],methods=[GET]}" onto public java.lang.String com.zick.controller.UserController.sayHello()
+2017-09-20 14:54:43.876  INFO 15384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.login(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession,java.lang.String,java.lang.String)
+2017-09-20 14:54:43.879  INFO 15384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-20 14:54:43.880  INFO 15384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-20 14:54:43.912  INFO 15384 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 14:54:43.912  INFO 15384 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 14:54:43.949  INFO 15384 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 14:54:44.642  WARN 15384 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2017-09-20 14:54:44.711  INFO 15384 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-20 14:54:44.713  INFO 15384 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-09-20 14:54:44.719  INFO 15384 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-09-20 14:54:44.779  INFO 15384 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-09-20 14:54:44.784  INFO 15384 --- [main] com.zick.SpringdemoApplication           : Started SpringdemoApplication in 4.625 seconds (JVM running for 5.595)
+2017-09-20 14:54:45.852  INFO 15384 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-20 14:54:45.852  INFO 15384 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-20 14:54:45.872  INFO 15384 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2017-09-20 15:25:04.135  INFO 21932 --- [main] com.zick.SpringdemoApplication           : Starting SpringdemoApplication on lp-PC with PID 21932 (D:\File\IdeaProjects\SpringBootDemo\target\classes started by Administrator in D:\File\IdeaProjects\SpringBootDemo)
+2017-09-20 15:25:04.138  INFO 21932 --- [main] com.zick.SpringdemoApplication           : No active profile set, falling back to default profiles: default
+2017-09-20 15:25:04.491  INFO 21932 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@20d3d15a: startup date [Wed Sep 20 15:25:04 CST 2017]; root of context hierarchy
+2017-09-20 15:25:05.495  INFO 21932 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-20 15:25:06.285  INFO 21932 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-09-20 15:25:06.295  INFO 21932 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-09-20 15:25:06.296  INFO 21932 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-20 15:25:06.546  INFO 21932 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-09-20 15:25:06.549  INFO 21932 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-20 15:25:06.549  INFO 21932 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2068 ms
+2017-09-20 15:25:06.723  INFO 21932 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-20 15:25:06.725  INFO 21932 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'com.zick.config.druid.DruidStatViewServlet' to [/druid/*]
+2017-09-20 15:25:06.728  INFO 21932 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-20 15:25:06.728  INFO 21932 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-20 15:25:06.729  INFO 21932 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-20 15:25:06.729  INFO 21932 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-20 15:25:06.729  INFO 21932 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2017-09-20 15:25:06.729  INFO 21932 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2017-09-20 15:25:07.515  INFO 21932 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@20d3d15a: startup date [Wed Sep 20 15:25:04 CST 2017]; root of context hierarchy
+2017-09-20 15:25:07.570  INFO 21932 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/delete],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.delete(int,javax.servlet.http.HttpServletResponse)
+2017-09-20 15:25:07.571  INFO 21932 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/release],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.insert(com.zick.model.Content,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletResponse)
+2017-09-20 15:25:07.572  INFO 21932 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/support],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.support(int,javax.servlet.http.HttpServletResponse)
+2017-09-20 15:25:07.572  INFO 21932 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAllContent],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.getAllContent(javax.servlet.http.HttpServletResponse)
+2017-09-20 15:25:07.573  INFO 21932 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/degrade],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.degrade(int,javax.servlet.http.HttpServletResponse)
+2017-09-20 15:25:07.574  INFO 21932 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/set],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisSet(java.lang.String)
+2017-09-20 15:25:07.574  INFO 21932 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAll]}" onto public com.zick.common.ServerResponse<java.util.List<com.zick.model.User>> com.zick.controller.ExampleController.users()
+2017-09-20 15:25:07.574  INFO 21932 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/get],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisGet()
+2017-09-20 15:25:07.575  INFO 21932 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/thymeleaf/git],methods=[GET]}" onto public java.lang.String com.zick.controller.ThymeleafTestController.getGit()
+2017-09-20 15:25:07.577  INFO 21932 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/register],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.register(com.zick.model.User,javax.servlet.http.HttpServletResponse)
+2017-09-20 15:25:07.577  INFO 21932 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/hello],methods=[GET]}" onto public java.lang.String com.zick.controller.UserController.sayHello()
+2017-09-20 15:25:07.577  INFO 21932 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.login(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession,java.lang.String,java.lang.String)
+2017-09-20 15:25:07.579  INFO 21932 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-20 15:25:07.580  INFO 21932 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-20 15:25:07.612  INFO 21932 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 15:25:07.612  INFO 21932 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 15:25:07.648  INFO 21932 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 15:25:08.378  WARN 21932 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2017-09-20 15:25:08.448  INFO 21932 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-20 15:25:08.450  INFO 21932 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-09-20 15:25:08.456  INFO 21932 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-09-20 15:25:08.520  INFO 21932 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-09-20 15:25:08.524  INFO 21932 --- [main] com.zick.SpringdemoApplication           : Started SpringdemoApplication in 4.724 seconds (JVM running for 5.538)
+2017-09-20 15:33:10.977  INFO 21928 --- [main] com.zick.SpringdemoApplication           : Starting SpringdemoApplication on lp-PC with PID 21928 (D:\File\IdeaProjects\SpringBootDemo\target\classes started by Administrator in D:\File\IdeaProjects\SpringBootDemo)
+2017-09-20 15:33:10.980  INFO 21928 --- [main] com.zick.SpringdemoApplication           : No active profile set, falling back to default profiles: default
+2017-09-20 15:33:11.543  INFO 21928 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@20d3d15a: startup date [Wed Sep 20 15:33:11 CST 2017]; root of context hierarchy
+2017-09-20 15:33:12.325  INFO 21928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-20 15:33:13.089  INFO 21928 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-09-20 15:33:13.099  INFO 21928 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-09-20 15:33:13.100  INFO 21928 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-20 15:33:13.350  INFO 21928 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-09-20 15:33:13.353  INFO 21928 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-20 15:33:13.353  INFO 21928 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1814 ms
+2017-09-20 15:33:13.533  INFO 21928 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-20 15:33:13.535  INFO 21928 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'com.zick.config.druid.DruidStatViewServlet' to [/druid/*]
+2017-09-20 15:33:13.538  INFO 21928 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-20 15:33:13.539  INFO 21928 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-20 15:33:13.539  INFO 21928 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-20 15:33:13.539  INFO 21928 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-20 15:33:13.539  INFO 21928 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2017-09-20 15:33:13.539  INFO 21928 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2017-09-20 15:33:14.308  INFO 21928 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@20d3d15a: startup date [Wed Sep 20 15:33:11 CST 2017]; root of context hierarchy
+2017-09-20 15:33:14.364  INFO 21928 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/delete],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.delete(int,javax.servlet.http.HttpServletResponse)
+2017-09-20 15:33:14.366  INFO 21928 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/release],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.insert(com.zick.model.Content,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletResponse)
+2017-09-20 15:33:14.366  INFO 21928 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/support],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.support(int,javax.servlet.http.HttpServletResponse)
+2017-09-20 15:33:14.366  INFO 21928 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAllContent],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.getAllContent(javax.servlet.http.HttpServletResponse)
+2017-09-20 15:33:14.367  INFO 21928 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/degrade],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.degrade(int,javax.servlet.http.HttpServletResponse)
+2017-09-20 15:33:14.368  INFO 21928 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/set],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisSet(java.lang.String)
+2017-09-20 15:33:14.368  INFO 21928 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAll]}" onto public com.zick.common.ServerResponse<java.util.List<com.zick.model.User>> com.zick.controller.ExampleController.users()
+2017-09-20 15:33:14.368  INFO 21928 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/get],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisGet()
+2017-09-20 15:33:14.369  INFO 21928 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/thymeleaf/git],methods=[GET]}" onto public java.lang.String com.zick.controller.ThymeleafTestController.getGit()
+2017-09-20 15:33:14.371  INFO 21928 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/register],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.register(com.zick.model.User,javax.servlet.http.HttpServletResponse)
+2017-09-20 15:33:14.371  INFO 21928 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/hello],methods=[GET]}" onto public java.lang.String com.zick.controller.UserController.sayHello()
+2017-09-20 15:33:14.371  INFO 21928 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.login(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession,java.lang.String,java.lang.String)
+2017-09-20 15:33:14.373  INFO 21928 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-20 15:33:14.374  INFO 21928 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-20 15:33:14.406  INFO 21928 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 15:33:14.406  INFO 21928 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 15:33:14.442  INFO 21928 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 15:33:15.102  WARN 21928 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2017-09-20 15:33:15.171  INFO 21928 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-20 15:33:15.173  INFO 21928 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-09-20 15:33:15.179  INFO 21928 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-09-20 15:33:15.235  INFO 21928 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-09-20 15:33:15.240  INFO 21928 --- [main] com.zick.SpringdemoApplication           : Started SpringdemoApplication in 4.686 seconds (JVM running for 5.514)
+2017-09-20 15:33:30.074  INFO 21928 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-20 15:33:30.074  INFO 21928 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-20 15:33:30.098  INFO 21928 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2017-09-20 15:49:52.602  INFO 18308 --- [restartedMain] com.zick.SpringdemoApplication           : Starting SpringdemoApplication on lp-PC with PID 18308 (D:\File\IdeaProjects\SpringBootDemo\target\classes started by Administrator in D:\File\IdeaProjects\SpringBootDemo)
+2017-09-20 15:49:52.603  INFO 18308 --- [restartedMain] com.zick.SpringdemoApplication           : No active profile set, falling back to default profiles: default
+2017-09-20 15:49:53.022  INFO 18308 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@325f1c49: startup date [Wed Sep 20 15:49:53 CST 2017]; root of context hierarchy
+2017-09-20 15:49:53.925  INFO 18308 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-20 15:49:54.851  INFO 18308 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-09-20 15:49:54.861  INFO 18308 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-09-20 15:49:54.862  INFO 18308 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-20 15:49:55.087  INFO 18308 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-09-20 15:49:55.089  INFO 18308 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-20 15:49:55.090  INFO 18308 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2071 ms
+2017-09-20 15:49:55.281  INFO 18308 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-20 15:49:55.282  INFO 18308 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'com.zick.config.druid.DruidStatViewServlet' to [/druid/*]
+2017-09-20 15:49:55.286  INFO 18308 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-20 15:49:55.286  INFO 18308 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-20 15:49:55.287  INFO 18308 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-20 15:49:55.287  INFO 18308 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-20 15:49:55.287  INFO 18308 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2017-09-20 15:49:55.287  INFO 18308 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2017-09-20 15:49:56.251  INFO 18308 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@325f1c49: startup date [Wed Sep 20 15:49:53 CST 2017]; root of context hierarchy
+2017-09-20 15:49:56.436  INFO 18308 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/delete],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.delete(int,javax.servlet.http.HttpServletResponse)
+2017-09-20 15:49:56.437  INFO 18308 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/release],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.insert(com.zick.model.Content,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletResponse)
+2017-09-20 15:49:56.438  INFO 18308 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/support],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.support(int,javax.servlet.http.HttpServletResponse)
+2017-09-20 15:49:56.438  INFO 18308 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/degrade],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.degrade(int,javax.servlet.http.HttpServletResponse)
+2017-09-20 15:49:56.438  INFO 18308 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAllContent],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.getAllContent(javax.servlet.http.HttpServletResponse)
+2017-09-20 15:49:56.439  INFO 18308 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/set],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisSet(java.lang.String)
+2017-09-20 15:49:56.439  INFO 18308 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAll]}" onto public com.zick.common.ServerResponse<java.util.List<com.zick.model.User>> com.zick.controller.ExampleController.users()
+2017-09-20 15:49:56.440  INFO 18308 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/get],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisGet()
+2017-09-20 15:49:56.441  INFO 18308 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/thymeleaf/git],methods=[GET]}" onto public java.lang.String com.zick.controller.ThymeleafTestController.getGit()
+2017-09-20 15:49:56.442  INFO 18308 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/register],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.register(com.zick.model.User,javax.servlet.http.HttpServletResponse)
+2017-09-20 15:49:56.443  INFO 18308 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/hello],methods=[GET]}" onto public java.lang.String com.zick.controller.UserController.sayHello()
+2017-09-20 15:49:56.443  INFO 18308 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.login(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession,java.lang.String,java.lang.String)
+2017-09-20 15:49:56.445  INFO 18308 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-20 15:49:56.446  INFO 18308 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-20 15:49:56.495  INFO 18308 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 15:49:56.496  INFO 18308 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 15:49:56.535  INFO 18308 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 15:49:57.164  INFO 18308 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-09-20 15:49:57.169  WARN 18308 --- [restartedMain] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2017-09-20 15:49:57.247  INFO 18308 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-20 15:49:57.249  INFO 18308 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-09-20 15:49:57.254  INFO 18308 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-09-20 15:49:57.320  INFO 18308 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-09-20 15:49:57.326  INFO 18308 --- [restartedMain] com.zick.SpringdemoApplication           : Started SpringdemoApplication in 5.226 seconds (JVM running for 6.219)
+2017-09-20 15:49:59.870  INFO 18308 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-20 15:49:59.870  INFO 18308 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-20 15:49:59.890  INFO 18308 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2017-09-20 16:17:33.467 ERROR 18308 --- [http-nio-8080-exec-7] o.a.c.c.C.[.[localhost].[/].[jsp]        : Servlet.service() for servlet [jsp] in context with path [] threw exception [java.lang.IllegalArgumentException: Illegal pattern character 'x'] with root cause
+
+java.lang.IllegalArgumentException: Illegal pattern character 'x'
+	at java.text.SimpleDateFormat.compile(SimpleDateFormat.java:826) ~[na:1.8.0_91]
+	at java.text.SimpleDateFormat.initialize(SimpleDateFormat.java:634) ~[na:1.8.0_91]
+	at java.text.SimpleDateFormat.<init>(SimpleDateFormat.java:605) ~[na:1.8.0_91]
+	at java.text.SimpleDateFormat.<init>(SimpleDateFormat.java:580) ~[na:1.8.0_91]
+	at org.apache.jsp.index_jsp.<init>(index_jsp.java:25) ~[na:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_91]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_91]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_91]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_91]
+	at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:129) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:171) ~[tomcat-embed-jasper-8.5.12.jar:8.5.12]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:380) ~[tomcat-embed-jasper-8.5.12.jar:8.5.12]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385) ~[tomcat-embed-jasper-8.5.12.jar:8.5.12]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329) ~[tomcat-embed-jasper-8.5.12.jar:8.5.12]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123) ~[druid-1.0.11.jar:1.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+
