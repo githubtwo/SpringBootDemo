@@ -53,6 +53,7 @@ body{
                         document.cookie="user_id="+data.data.id;
                         document.cookie="title="+data.data.username;
                         window.location.href='announce.html';
+//                        window.location.href='/xxx.jsp';
                     }
                     //console.log(data.data);
                     $("#result").html(JSON.stringify(data.data) + "<br/>" + data.data.username);

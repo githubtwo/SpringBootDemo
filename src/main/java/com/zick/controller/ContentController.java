@@ -7,9 +7,11 @@ import com.zick.model.User;
 import com.zick.service.ContentService;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
@@ -29,7 +31,7 @@ public class ContentController {
         return ServerResponse.createByErrorMessage("当前用户为空");
     }
 
-    @GetMapping("/getAllContent")
+    @PostMapping("/getAllContent")
     public ServerResponse getAllContent(HttpServletResponse response){
 //        response.setHeader("Access-Control-Allow-Origin", "*");
         return contentService.getAllContent();

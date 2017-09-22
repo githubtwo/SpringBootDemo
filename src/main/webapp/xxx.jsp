@@ -1,41 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<html>
 <head>
-    <meta charset="UTF-8">
     <title>Title</title>
-
-    <style type="text/css">
-        body{
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            background-color: #fff;
-            /*width:30%;*/
-            /*height: 40%;*/
-            /*border:1px solid red;*/
-            -webkit-transform: translateX(-50%) translateY(-50%);
-            line-height: 2em;
-        }
-        .content{
-            width:300px;
-            height:160px;
-        }
-
-    </style>
 </head>
 <body>
-    <label >写下你的内容</label>
-    <div>
-        <textarea name="a" class="content">这里写内容</textarea>
+<label >写下你的内容</label>
+<div>
+    <textarea name="a" class="content">这里写内容${current_user.username}</textarea>
 
-    </div>
-    <div align="center">
-        <button class="annouuce" >发布</button>
-        <button class="home" >首页</button>
-    </div>
-
-
-
+</div>
+<div align="center">
+    <button class="annouuce" >发布</button>
+    <button class="home" >首页</button>
+</div>
 </body>
 <script type="text/javascript" src="js/jq.js"></script>
 <script type="text/javascript">
@@ -79,5 +57,4 @@
             return null;
     };
 </script>
-
 </html>

@@ -14,5 +14,10 @@
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
-
+    <!--单位是分钟-->
+    <!--<session-config>-->
+        <!--<session-timeout>-->
+            <!--10-->
+        <!--</session-timeout>-->
+    <!--</session-config>-->
 </web-app>
