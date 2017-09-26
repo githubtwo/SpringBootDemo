@@ -48,4 +48,9 @@ public class UserController {
         response.setHeader("Access-Control-Allow-Origin", "*");
         return userService.register(user);
     }
+
+    @GetMapping("test")
+    public ServerResponse test(User user){
+        return ServerResponse.createBySuccess(user);
+    }
 }
