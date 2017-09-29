@@ -1,4 +1,4 @@
-package com.zick.config.interceptor;
+package com.zick.config.aspect;
 
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;

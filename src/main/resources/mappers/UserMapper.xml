@@ -129,7 +129,7 @@
     and password  =#{password}
   </select>
 
-  <select id="getAll" resultMap="BaseResultMap">
+  <select id="getAllUser" resultMap="BaseResultMap">
     SELECT * from zhihu_user
   </select>
 </mapper>

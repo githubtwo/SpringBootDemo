@@ -66,8 +66,8 @@ public class UserService {
         return null;
     }
 
-    public ServerResponse<List<User>> getAll(){
-        List<User> list = userMapper.getAll();
+    public ServerResponse<List<User>> getAllUser(){
+        List<User> list = userMapper.getAllUser();
         if(!ListUtils.isEmpty(list)){
             return ServerResponse.createBySuccess(list);
         }

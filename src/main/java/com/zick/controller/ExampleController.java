@@ -29,7 +29,7 @@ public class ExampleController {
 	
 	@RequestMapping("/getAll")
 	public ServerResponse<List<User>> users(){
-		ServerResponse<List<User>> listServerResponse = userService.getAll();
+		ServerResponse<List<User>> listServerResponse = userService.getAllUser();
 		return listServerResponse;
 	}
 	

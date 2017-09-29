@@ -16,6 +16,7 @@ public class MyInterceptor1 implements HandlerInterceptor {
         return true;// 只有返回true才会继续向下执行，返回false取消当前请求
     }
 
+    //handler表示的是被拦截的请求的目标对象实例
     @Override
     public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler,
                            ModelAndView modelAndView) throws Exception {

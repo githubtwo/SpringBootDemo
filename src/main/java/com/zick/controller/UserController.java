@@ -16,6 +16,7 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.util.List;
 
 @RestController
 @EnableAutoConfiguration
@@ -31,7 +32,7 @@ public class UserController {
     }
 
     @GetMapping("/login")
-    public ServerResponse login(HttpServletResponse response, HttpSession session, String username, String password, HttpServletRequest request){
+    public ServerResponse login( HttpSession session, String username, String password, HttpServletRequest request){
         //response.setHeader("Access-Control-Allow-Origin", "*");
         logger.error("error");
         session.setMaxInactiveInterval(86400 * 30);
@@ -42,15 +43,20 @@ public class UserController {
         return serverResponse;
     }
 
-    @GetMapping("register")
+    @GetMapping("/register")
     public ServerResponse register(User user,HttpServletResponse response){
 
-        response.setHeader("Access-Control-Allow-Origin", "*");
+        //response.setHeader("Access-Control-Allow-Origin", "*");
         return userService.register(user);
     }
 
-    @GetMapping("test")
+    @GetMapping("/test")
     public ServerResponse test(User user){
         return ServerResponse.createBySuccess(user);
+    }
+
+    @GetMapping("/getAllUser")
+    public ServerResponse<List<User>> getAllUser(){
+        return userService.getAllUser();
     }
 }

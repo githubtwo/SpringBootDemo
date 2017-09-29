@@ -1,5 +1,7 @@
 package com.zick.model;
 
+import com.alibaba.fastjson.annotation.JSONField;
+
 import java.util.Date;
 
 public class User {
@@ -11,8 +13,9 @@ public class User {
 
     private String phone;
 
+    @JSONField(format="yyyy-MM-dd HH:mm:ss")
     private Date createTime;
-
+    @JSONField(format="yyyy-MM-dd HH:mm:ss")
     private Date updateTime;
 
     private String img;
@@ -25,6 +28,11 @@ public class User {
         this.createTime = createTime;
         this.updateTime = updateTime;
         this.img = img;
+    }
+
+    public User(String username, String password) {
+        this.username = username;
+        this.password = password;
     }
 
     public User() {
