@@ -54,7 +54,7 @@
   </insert>
   <update id="updateByPrimaryKeySelective" parameterType="com.zick.model.Collect" >
     update zhihu_collect
-    <set >
+    <set>
       <if test="contentId != null" >
         content_id = #{contentId,jdbcType=INTEGER},
       </if>

@@ -23839,3 +23839,610 @@ java.lang.NoSuchMethodError: ch.qos.logback.classic.LoggerContext.removeObject(L
 2017-09-28 13:55:10.250 DEBUG 14156 --- [http-nio-8080-exec-5] com.zick.dao.UserMapper.selectLogin      : ==>  Preparing: SELECT id, username, password, phone, create_time, update_time, img FROM zhihu_user WHERE username=? and password =? 
 2017-09-28 13:55:10.251 DEBUG 14156 --- [http-nio-8080-exec-5] com.zick.dao.UserMapper.selectLogin      : ==> Parameters: zick(String), D8F80B67499E434EA61ADAF6E6219BF2(String)
 2017-09-28 13:55:10.286 DEBUG 14156 --- [http-nio-8080-exec-5] com.zick.dao.UserMapper.selectLogin      : <==      Total: 1
+2017-10-10 19:08:25.220  INFO 7760 --- [restartedMain] com.zick.SpringdemoApplication           : Starting SpringdemoApplication on lp-PC with PID 7760 (D:\File\IdeaProjects\SpringBootDemo\target\classes started by Administrator in D:\File\IdeaProjects\SpringBootDemo)
+2017-10-10 19:08:25.220  INFO 7760 --- [restartedMain] com.zick.SpringdemoApplication           : No active profile set, falling back to default profiles: default
+2017-10-10 19:08:25.564  INFO 7760 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@484cc065: startup date [Tue Oct 10 19:08:25 CST 2017]; root of context hierarchy
+2017-10-10 19:08:26.516  INFO 7760 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-10-10 19:08:27.720  INFO 7760 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-10-10 19:08:27.735  INFO 7760 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-10 19:08:27.735  INFO 7760 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-10-10 19:08:27.954  INFO 7760 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-10-10 19:08:27.954  INFO 7760 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-10 19:08:27.954  INFO 7760 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2390 ms
+2017-10-10 19:08:28.188  INFO 7760 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-10 19:08:28.203  INFO 7760 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'com.zick.config.druid.DruidStatViewServlet' to [/druid/*]
+2017-10-10 19:08:28.203  INFO 7760 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-10 19:08:28.203  INFO 7760 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-10 19:08:28.203  INFO 7760 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-10 19:08:28.203  INFO 7760 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-10 19:08:28.203  INFO 7760 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2017-10-10 19:08:28.203  INFO 7760 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2017-10-10 19:08:29.455  INFO 7760 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@484cc065: startup date [Tue Oct 10 19:08:25 CST 2017]; root of context hierarchy
+2017-10-10 19:08:29.533  INFO 7760 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/delete],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.delete(int,javax.servlet.http.HttpServletResponse)
+2017-10-10 19:08:29.533  INFO 7760 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/release],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.insert(com.zick.model.Content,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletResponse)
+2017-10-10 19:08:29.533  INFO 7760 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAllContent],methods=[POST]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.getAllContent(javax.servlet.http.HttpServletResponse)
+2017-10-10 19:08:29.533  INFO 7760 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/support],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.support(int,javax.servlet.http.HttpServletResponse)
+2017-10-10 19:08:29.533  INFO 7760 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/degrade],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.degrade(int,javax.servlet.http.HttpServletResponse)
+2017-10-10 19:08:29.533  INFO 7760 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/set],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisSet(java.lang.String)
+2017-10-10 19:08:29.533  INFO 7760 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAll]}" onto public com.zick.common.ServerResponse<java.util.List<com.zick.model.User>> com.zick.controller.ExampleController.users()
+2017-10-10 19:08:29.533  INFO 7760 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/get],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisGet()
+2017-10-10 19:08:29.533  INFO 7760 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/thymeleaf/git],methods=[GET]}" onto public java.lang.String com.zick.controller.ThymeleafTestController.getGit()
+2017-10-10 19:08:29.533  INFO 7760 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/register],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.register(com.zick.model.User,javax.servlet.http.HttpServletResponse)
+2017-10-10 19:08:29.533  INFO 7760 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/test],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.test(com.zick.model.User)
+2017-10-10 19:08:29.533  INFO 7760 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getAllUser],methods=[GET]}" onto public com.zick.common.ServerResponse<java.util.List<com.zick.model.User>> com.zick.controller.UserController.getAllUser()
+2017-10-10 19:08:29.549  INFO 7760 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/hello],methods=[GET]}" onto public java.lang.String com.zick.controller.UserController.sayHello()
+2017-10-10 19:08:29.549  INFO 7760 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.login(javax.servlet.http.HttpSession,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2017-10-10 19:08:29.549  INFO 7760 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-10 19:08:29.549  INFO 7760 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-10 19:08:29.611  INFO 7760 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-10 19:08:29.611  INFO 7760 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-10 19:08:29.668  INFO 7760 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-10 19:08:30.625  INFO 7760 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-10-10 19:08:30.625  WARN 7760 --- [restartedMain] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2017-10-10 19:08:30.703  INFO 7760 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-10-10 19:08:30.703  INFO 7760 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-10-10 19:08:30.703  INFO 7760 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-10-10 19:08:30.765  INFO 7760 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-10-10 19:08:30.765  INFO 7760 --- [restartedMain] com.zick.SpringdemoApplication           : Started SpringdemoApplication in 5.889 seconds (JVM running for 8.17)
+2017-10-10 19:08:52.901  INFO 7760 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-10 19:08:52.902  INFO 7760 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-10-10 19:08:52.926  INFO 7760 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2017-10-10 19:08:52.969 ERROR 7760 --- [http-nio-8080-exec-1] com.zick.controller.UserController       : error
+2017-10-10 19:08:53.012  INFO 7760 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2017-10-10 19:09:30.064  INFO 2488 --- [restartedMain] com.zick.SpringdemoApplication           : Starting SpringdemoApplication on lp-PC with PID 2488 (D:\File\IdeaProjects\SpringBootDemo\target\classes started by Administrator in D:\File\IdeaProjects\SpringBootDemo)
+2017-10-10 19:09:30.066  INFO 2488 --- [restartedMain] com.zick.SpringdemoApplication           : No active profile set, falling back to default profiles: default
+2017-10-10 19:09:30.530  INFO 2488 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3ab5db8b: startup date [Tue Oct 10 19:09:30 CST 2017]; root of context hierarchy
+2017-10-10 19:09:31.517  INFO 2488 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-10-10 19:09:32.563  INFO 2488 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-10-10 19:09:32.572  INFO 2488 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-10 19:09:32.573  INFO 2488 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-10-10 19:09:32.760  INFO 2488 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-10-10 19:09:32.762  INFO 2488 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-10 19:09:32.763  INFO 2488 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2236 ms
+2017-10-10 19:09:33.034  INFO 2488 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-10 19:09:33.036  INFO 2488 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'com.zick.config.druid.DruidStatViewServlet' to [/druid/*]
+2017-10-10 19:09:33.041  INFO 2488 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-10 19:09:33.041  INFO 2488 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-10 19:09:33.041  INFO 2488 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-10 19:09:33.042  INFO 2488 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-10 19:09:33.042  INFO 2488 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2017-10-10 19:09:33.042  INFO 2488 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2017-10-10 19:09:34.214  INFO 2488 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3ab5db8b: startup date [Tue Oct 10 19:09:30 CST 2017]; root of context hierarchy
+2017-10-10 19:09:34.296  INFO 2488 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/delete],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.delete(int,javax.servlet.http.HttpServletResponse)
+2017-10-10 19:09:34.297  INFO 2488 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/release],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.insert(com.zick.model.Content,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletResponse)
+2017-10-10 19:09:34.298  INFO 2488 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAllContent],methods=[POST]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.getAllContent(javax.servlet.http.HttpServletResponse)
+2017-10-10 19:09:34.298  INFO 2488 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/support],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.support(int,javax.servlet.http.HttpServletResponse)
+2017-10-10 19:09:34.298  INFO 2488 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/degrade],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.degrade(int,javax.servlet.http.HttpServletResponse)
+2017-10-10 19:09:34.299  INFO 2488 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/set],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisSet(java.lang.String)
+2017-10-10 19:09:34.300  INFO 2488 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAll]}" onto public com.zick.common.ServerResponse<java.util.List<com.zick.model.User>> com.zick.controller.ExampleController.users()
+2017-10-10 19:09:34.300  INFO 2488 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/get],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisGet()
+2017-10-10 19:09:34.301  INFO 2488 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/thymeleaf/git],methods=[GET]}" onto public java.lang.String com.zick.controller.ThymeleafTestController.getGit()
+2017-10-10 19:09:34.304  INFO 2488 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/register],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.register(com.zick.model.User,javax.servlet.http.HttpServletResponse)
+2017-10-10 19:09:34.304  INFO 2488 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/test],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.test(com.zick.model.User)
+2017-10-10 19:09:34.305  INFO 2488 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getAllUser],methods=[GET]}" onto public com.zick.common.ServerResponse<java.util.List<com.zick.model.User>> com.zick.controller.UserController.getAllUser()
+2017-10-10 19:09:34.305  INFO 2488 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/hello],methods=[GET]}" onto public java.lang.String com.zick.controller.UserController.sayHello()
+2017-10-10 19:09:34.306  INFO 2488 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.login(javax.servlet.http.HttpSession,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2017-10-10 19:09:34.308  INFO 2488 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-10 19:09:34.309  INFO 2488 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-10 19:09:34.370  INFO 2488 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-10 19:09:34.370  INFO 2488 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-10 19:09:34.420  INFO 2488 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-10 19:09:35.332  INFO 2488 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-10-10 19:09:35.338  WARN 2488 --- [restartedMain] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2017-10-10 19:09:35.417  INFO 2488 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-10-10 19:09:35.418  INFO 2488 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-10-10 19:09:35.424  INFO 2488 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-10-10 19:09:35.483  INFO 2488 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-10-10 19:09:35.489  INFO 2488 --- [restartedMain] com.zick.SpringdemoApplication           : Started SpringdemoApplication in 6.052 seconds (JVM running for 7.033)
+2017-10-10 19:09:40.042  INFO 2488 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-10 19:09:40.042  INFO 2488 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-10-10 19:09:40.063  INFO 2488 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2017-10-10 19:09:40.103 ERROR 2488 --- [http-nio-8080-exec-1] com.zick.controller.UserController       : error
+2017-10-10 19:09:40.140  INFO 2488 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2017-10-10 19:09:44.216 ERROR 2488 --- [Druid-ConnectionPool-Create-101143164] com.alibaba.druid.pool.DruidDataSource   : create connection error, url: jdbc:mysql://172.16.0.118:3306/zhihu?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&allowMultiQueries=true
+
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_91]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_91]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_91]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_91]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.Util.getInstance(Util.java:408) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:918) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:897) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:886) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:2104) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2029) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_91]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_91]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_91]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_91]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375) ~[druid-1.0.11.jar:1.0.11]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431) ~[druid-1.0.11.jar:1.0.11]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1857) ~[druid-1.0.11.jar:1.0.11]
+Caused by: java.sql.SQLException: null,  message from server: "Host 'lp-PC' is not allowed to connect to this MySQL server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:897) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:886) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1040) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2198) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:2045) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	... 13 common frames omitted
+
+2017-10-10 19:09:48.220 ERROR 2488 --- [Druid-ConnectionPool-Create-101143164] com.alibaba.druid.pool.DruidDataSource   : create connection error, url: jdbc:mysql://172.16.0.118:3306/zhihu?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&allowMultiQueries=true
+
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_91]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_91]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_91]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_91]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.Util.getInstance(Util.java:408) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:918) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:897) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:886) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:2104) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2029) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_91]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_91]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_91]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_91]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375) ~[druid-1.0.11.jar:1.0.11]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431) ~[druid-1.0.11.jar:1.0.11]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1857) ~[druid-1.0.11.jar:1.0.11]
+Caused by: java.sql.SQLException: null,  message from server: "Host 'lp-PC' is not allowed to connect to this MySQL server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:897) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:886) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1040) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2198) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:2045) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	... 13 common frames omitted
+
+2017-10-10 19:09:52.226 ERROR 2488 --- [Druid-ConnectionPool-Create-101143164] com.alibaba.druid.pool.DruidDataSource   : create connection error, url: jdbc:mysql://172.16.0.118:3306/zhihu?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&allowMultiQueries=true
+
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_91]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_91]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_91]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_91]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.Util.getInstance(Util.java:408) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:918) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:897) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:886) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:2104) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2029) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_91]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_91]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_91]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_91]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375) ~[druid-1.0.11.jar:1.0.11]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431) ~[druid-1.0.11.jar:1.0.11]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1857) ~[druid-1.0.11.jar:1.0.11]
+Caused by: java.sql.SQLException: null,  message from server: "Host 'lp-PC' is not allowed to connect to this MySQL server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:897) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:886) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1040) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2198) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:2045) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	... 13 common frames omitted
+
+2017-10-10 19:09:56.232 ERROR 2488 --- [Druid-ConnectionPool-Create-101143164] com.alibaba.druid.pool.DruidDataSource   : create connection error, url: jdbc:mysql://172.16.0.118:3306/zhihu?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&allowMultiQueries=true
+
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_91]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_91]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_91]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_91]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.Util.getInstance(Util.java:408) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:918) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:897) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:886) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:2104) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2029) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_91]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_91]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_91]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_91]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375) ~[druid-1.0.11.jar:1.0.11]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431) ~[druid-1.0.11.jar:1.0.11]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1857) ~[druid-1.0.11.jar:1.0.11]
+Caused by: java.sql.SQLException: null,  message from server: "Host 'lp-PC' is not allowed to connect to this MySQL server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:897) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:886) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1040) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2198) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:2045) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	... 13 common frames omitted
+
+2017-10-10 19:10:00.236 ERROR 2488 --- [Druid-ConnectionPool-Create-101143164] com.alibaba.druid.pool.DruidDataSource   : create connection error, url: jdbc:mysql://172.16.0.118:3306/zhihu?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&allowMultiQueries=true
+
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_91]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_91]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_91]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_91]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.Util.getInstance(Util.java:408) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:918) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:897) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:886) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:2104) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2029) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_91]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_91]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_91]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_91]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375) ~[druid-1.0.11.jar:1.0.11]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431) ~[druid-1.0.11.jar:1.0.11]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1857) ~[druid-1.0.11.jar:1.0.11]
+Caused by: java.sql.SQLException: null,  message from server: "Host 'lp-PC' is not allowed to connect to this MySQL server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:897) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:886) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1040) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2198) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:2045) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	... 13 common frames omitted
+
+2017-10-10 19:10:02.414 ERROR 2488 --- [http-nio-8080-exec-2] com.zick.controller.UserController       : error
+2017-10-10 19:10:04.242 ERROR 2488 --- [Druid-ConnectionPool-Create-101143164] com.alibaba.druid.pool.DruidDataSource   : create connection error, url: jdbc:mysql://172.16.0.118:3306/zhihu?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&allowMultiQueries=true
+
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_91]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_91]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_91]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_91]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.Util.getInstance(Util.java:408) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:918) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:897) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:886) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:2104) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2029) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_91]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_91]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_91]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_91]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375) ~[druid-1.0.11.jar:1.0.11]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431) ~[druid-1.0.11.jar:1.0.11]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1857) ~[druid-1.0.11.jar:1.0.11]
+Caused by: java.sql.SQLException: null,  message from server: "Host 'lp-PC' is not allowed to connect to this MySQL server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:897) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:886) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1040) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2198) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:2045) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	... 13 common frames omitted
+
+2017-10-10 19:10:08.246 ERROR 2488 --- [Druid-ConnectionPool-Create-101143164] com.alibaba.druid.pool.DruidDataSource   : create connection error, url: jdbc:mysql://172.16.0.118:3306/zhihu?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&allowMultiQueries=true
+
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_91]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_91]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_91]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_91]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.Util.getInstance(Util.java:408) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:918) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:897) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:886) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:2104) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2029) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_91]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_91]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_91]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_91]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375) ~[druid-1.0.11.jar:1.0.11]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431) ~[druid-1.0.11.jar:1.0.11]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1857) ~[druid-1.0.11.jar:1.0.11]
+Caused by: java.sql.SQLException: null,  message from server: "Host 'lp-PC' is not allowed to connect to this MySQL server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:897) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:886) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1040) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2198) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:2045) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	... 13 common frames omitted
+
+2017-10-10 19:10:12.252 ERROR 2488 --- [Druid-ConnectionPool-Create-101143164] com.alibaba.druid.pool.DruidDataSource   : create connection error, url: jdbc:mysql://172.16.0.118:3306/zhihu?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&allowMultiQueries=true
+
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_91]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_91]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_91]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_91]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.Util.getInstance(Util.java:408) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:918) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:897) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:886) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:2104) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2029) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_91]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_91]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_91]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_91]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375) ~[druid-1.0.11.jar:1.0.11]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431) ~[druid-1.0.11.jar:1.0.11]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1857) ~[druid-1.0.11.jar:1.0.11]
+Caused by: java.sql.SQLException: null,  message from server: "Host 'lp-PC' is not allowed to connect to this MySQL server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:897) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:886) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1040) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2198) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:2045) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	... 13 common frames omitted
+
+2017-10-10 19:10:17.334  INFO 6056 --- [restartedMain] com.zick.SpringdemoApplication           : Starting SpringdemoApplication on lp-PC with PID 6056 (D:\File\IdeaProjects\SpringBootDemo\target\classes started by Administrator in D:\File\IdeaProjects\SpringBootDemo)
+2017-10-10 19:10:17.335  INFO 6056 --- [restartedMain] com.zick.SpringdemoApplication           : No active profile set, falling back to default profiles: default
+2017-10-10 19:10:17.822  INFO 6056 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6bff2bda: startup date [Tue Oct 10 19:10:17 CST 2017]; root of context hierarchy
+2017-10-10 19:10:18.757  INFO 6056 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-10-10 19:10:19.809  INFO 6056 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-10-10 19:10:19.819  INFO 6056 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-10 19:10:19.820  INFO 6056 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-10-10 19:10:20.010  INFO 6056 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-10-10 19:10:20.012  INFO 6056 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-10 19:10:20.013  INFO 6056 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2194 ms
+2017-10-10 19:10:20.241  INFO 6056 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-10 19:10:20.242  INFO 6056 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'com.zick.config.druid.DruidStatViewServlet' to [/druid/*]
+2017-10-10 19:10:20.245  INFO 6056 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-10 19:10:20.245  INFO 6056 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-10 19:10:20.246  INFO 6056 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-10 19:10:20.246  INFO 6056 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-10 19:10:20.246  INFO 6056 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2017-10-10 19:10:20.246  INFO 6056 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2017-10-10 19:10:21.385  INFO 6056 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6bff2bda: startup date [Tue Oct 10 19:10:17 CST 2017]; root of context hierarchy
+2017-10-10 19:10:21.451  INFO 6056 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/delete],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.delete(int,javax.servlet.http.HttpServletResponse)
+2017-10-10 19:10:21.452  INFO 6056 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/release],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.insert(com.zick.model.Content,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletResponse)
+2017-10-10 19:10:21.452  INFO 6056 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAllContent],methods=[POST]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.getAllContent(javax.servlet.http.HttpServletResponse)
+2017-10-10 19:10:21.453  INFO 6056 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/support],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.support(int,javax.servlet.http.HttpServletResponse)
+2017-10-10 19:10:21.453  INFO 6056 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/degrade],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.degrade(int,javax.servlet.http.HttpServletResponse)
+2017-10-10 19:10:21.454  INFO 6056 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/set],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisSet(java.lang.String)
+2017-10-10 19:10:21.454  INFO 6056 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAll]}" onto public com.zick.common.ServerResponse<java.util.List<com.zick.model.User>> com.zick.controller.ExampleController.users()
+2017-10-10 19:10:21.454  INFO 6056 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/get],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisGet()
+2017-10-10 19:10:21.455  INFO 6056 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/thymeleaf/git],methods=[GET]}" onto public java.lang.String com.zick.controller.ThymeleafTestController.getGit()
+2017-10-10 19:10:21.457  INFO 6056 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/register],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.register(com.zick.model.User,javax.servlet.http.HttpServletResponse)
+2017-10-10 19:10:21.458  INFO 6056 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/test],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.test(com.zick.model.User)
+2017-10-10 19:10:21.458  INFO 6056 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getAllUser],methods=[GET]}" onto public com.zick.common.ServerResponse<java.util.List<com.zick.model.User>> com.zick.controller.UserController.getAllUser()
+2017-10-10 19:10:21.459  INFO 6056 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/hello],methods=[GET]}" onto public java.lang.String com.zick.controller.UserController.sayHello()
+2017-10-10 19:10:21.459  INFO 6056 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.login(javax.servlet.http.HttpSession,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2017-10-10 19:10:21.461  INFO 6056 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-10 19:10:21.461  INFO 6056 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-10 19:10:21.516  INFO 6056 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-10 19:10:21.516  INFO 6056 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-10 19:10:21.564  INFO 6056 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-10 19:10:22.468  INFO 6056 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-10-10 19:10:22.474  WARN 6056 --- [restartedMain] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2017-10-10 19:10:22.548  INFO 6056 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-10-10 19:10:22.550  INFO 6056 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-10-10 19:10:22.556  INFO 6056 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-10-10 19:10:22.614  INFO 6056 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-10-10 19:10:22.619  INFO 6056 --- [restartedMain] com.zick.SpringdemoApplication           : Started SpringdemoApplication in 5.693 seconds (JVM running for 6.588)
+2017-10-10 19:10:36.500  INFO 936 --- [restartedMain] com.zick.SpringdemoApplication           : Starting SpringdemoApplication on lp-PC with PID 936 (D:\File\IdeaProjects\SpringBootDemo\target\classes started by Administrator in D:\File\IdeaProjects\SpringBootDemo)
+2017-10-10 19:10:36.502  INFO 936 --- [restartedMain] com.zick.SpringdemoApplication           : No active profile set, falling back to default profiles: default
+2017-10-10 19:10:36.840  INFO 936 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7d570d30: startup date [Tue Oct 10 19:10:36 CST 2017]; root of context hierarchy
+2017-10-10 19:10:37.721  INFO 936 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-10-10 19:10:38.809  INFO 936 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-10-10 19:10:38.819  INFO 936 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-10 19:10:38.820  INFO 936 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-10-10 19:10:39.007  INFO 936 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-10-10 19:10:39.009  INFO 936 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-10 19:10:39.010  INFO 936 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2173 ms
+2017-10-10 19:10:39.254  INFO 936 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-10 19:10:39.255  INFO 936 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'com.zick.config.druid.DruidStatViewServlet' to [/druid/*]
+2017-10-10 19:10:39.258  INFO 936 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-10 19:10:39.258  INFO 936 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-10 19:10:39.259  INFO 936 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-10 19:10:39.259  INFO 936 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-10 19:10:39.259  INFO 936 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2017-10-10 19:10:39.259  INFO 936 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2017-10-10 19:10:40.415  INFO 936 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7d570d30: startup date [Tue Oct 10 19:10:36 CST 2017]; root of context hierarchy
+2017-10-10 19:10:40.484  INFO 936 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/delete],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.delete(int,javax.servlet.http.HttpServletResponse)
+2017-10-10 19:10:40.485  INFO 936 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/release],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.insert(com.zick.model.Content,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletResponse)
+2017-10-10 19:10:40.485  INFO 936 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/support],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.support(int,javax.servlet.http.HttpServletResponse)
+2017-10-10 19:10:40.486  INFO 936 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAllContent],methods=[POST]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.getAllContent(javax.servlet.http.HttpServletResponse)
+2017-10-10 19:10:40.486  INFO 936 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/degrade],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.degrade(int,javax.servlet.http.HttpServletResponse)
+2017-10-10 19:10:40.487  INFO 936 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/set],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisSet(java.lang.String)
+2017-10-10 19:10:40.488  INFO 936 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAll]}" onto public com.zick.common.ServerResponse<java.util.List<com.zick.model.User>> com.zick.controller.ExampleController.users()
+2017-10-10 19:10:40.488  INFO 936 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/get],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisGet()
+2017-10-10 19:10:40.489  INFO 936 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/thymeleaf/git],methods=[GET]}" onto public java.lang.String com.zick.controller.ThymeleafTestController.getGit()
+2017-10-10 19:10:40.491  INFO 936 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/register],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.register(com.zick.model.User,javax.servlet.http.HttpServletResponse)
+2017-10-10 19:10:40.491  INFO 936 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/test],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.test(com.zick.model.User)
+2017-10-10 19:10:40.492  INFO 936 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getAllUser],methods=[GET]}" onto public com.zick.common.ServerResponse<java.util.List<com.zick.model.User>> com.zick.controller.UserController.getAllUser()
+2017-10-10 19:10:40.492  INFO 936 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/hello],methods=[GET]}" onto public java.lang.String com.zick.controller.UserController.sayHello()
+2017-10-10 19:10:40.493  INFO 936 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.login(javax.servlet.http.HttpSession,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2017-10-10 19:10:40.495  INFO 936 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-10 19:10:40.495  INFO 936 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-10 19:10:40.553  INFO 936 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-10 19:10:40.553  INFO 936 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-10 19:10:40.602  INFO 936 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-10 19:10:41.529  INFO 936 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-10-10 19:10:41.535  WARN 936 --- [restartedMain] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2017-10-10 19:10:41.610  INFO 936 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-10-10 19:10:41.612  INFO 936 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-10-10 19:10:41.618  INFO 936 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-10-10 19:10:41.676  INFO 936 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-10-10 19:10:41.682  INFO 936 --- [restartedMain] com.zick.SpringdemoApplication           : Started SpringdemoApplication in 5.874 seconds (JVM running for 6.745)
+2017-10-10 19:10:45.244  INFO 6508 --- [restartedMain] com.zick.SpringdemoApplication           : Starting SpringdemoApplication on lp-PC with PID 6508 (D:\File\IdeaProjects\SpringBootDemo\target\classes started by Administrator in D:\File\IdeaProjects\SpringBootDemo)
+2017-10-10 19:10:45.246  INFO 6508 --- [restartedMain] com.zick.SpringdemoApplication           : No active profile set, falling back to default profiles: default
+2017-10-10 19:10:45.480  INFO 6508 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@21e5c0da: startup date [Tue Oct 10 19:10:45 CST 2017]; root of context hierarchy
+2017-10-10 19:10:46.359  INFO 6508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-10-10 19:10:47.406  INFO 6508 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-10-10 19:10:47.416  INFO 6508 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-10 19:10:47.417  INFO 6508 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-10-10 19:10:47.614  INFO 6508 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-10-10 19:10:47.617  INFO 6508 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-10 19:10:47.617  INFO 6508 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2140 ms
+2017-10-10 19:10:47.874  INFO 6508 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-10 19:10:47.875  INFO 6508 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'com.zick.config.druid.DruidStatViewServlet' to [/druid/*]
+2017-10-10 19:10:47.879  INFO 6508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-10 19:10:47.879  INFO 6508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-10 19:10:47.879  INFO 6508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-10 19:10:47.879  INFO 6508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-10 19:10:47.880  INFO 6508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2017-10-10 19:10:47.880  INFO 6508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2017-10-10 19:10:49.010  INFO 6508 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@21e5c0da: startup date [Tue Oct 10 19:10:45 CST 2017]; root of context hierarchy
+2017-10-10 19:10:49.077  INFO 6508 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/delete],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.delete(int,javax.servlet.http.HttpServletResponse)
+2017-10-10 19:10:49.078  INFO 6508 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/release],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.insert(com.zick.model.Content,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletResponse)
+2017-10-10 19:10:49.079  INFO 6508 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/support],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.support(int,javax.servlet.http.HttpServletResponse)
+2017-10-10 19:10:49.079  INFO 6508 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAllContent],methods=[POST]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.getAllContent(javax.servlet.http.HttpServletResponse)
+2017-10-10 19:10:49.079  INFO 6508 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/degrade],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.degrade(int,javax.servlet.http.HttpServletResponse)
+2017-10-10 19:10:49.080  INFO 6508 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAll]}" onto public com.zick.common.ServerResponse<java.util.List<com.zick.model.User>> com.zick.controller.ExampleController.users()
+2017-10-10 19:10:49.081  INFO 6508 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/set],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisSet(java.lang.String)
+2017-10-10 19:10:49.081  INFO 6508 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/get],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisGet()
+2017-10-10 19:10:49.082  INFO 6508 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/thymeleaf/git],methods=[GET]}" onto public java.lang.String com.zick.controller.ThymeleafTestController.getGit()
+2017-10-10 19:10:49.084  INFO 6508 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/register],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.register(com.zick.model.User,javax.servlet.http.HttpServletResponse)
+2017-10-10 19:10:49.084  INFO 6508 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/test],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.test(com.zick.model.User)
+2017-10-10 19:10:49.085  INFO 6508 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getAllUser],methods=[GET]}" onto public com.zick.common.ServerResponse<java.util.List<com.zick.model.User>> com.zick.controller.UserController.getAllUser()
+2017-10-10 19:10:49.085  INFO 6508 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/hello],methods=[GET]}" onto public java.lang.String com.zick.controller.UserController.sayHello()
+2017-10-10 19:10:49.085  INFO 6508 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.login(javax.servlet.http.HttpSession,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2017-10-10 19:10:49.088  INFO 6508 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-10 19:10:49.088  INFO 6508 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-10 19:10:49.142  INFO 6508 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-10 19:10:49.142  INFO 6508 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-10 19:10:49.189  INFO 6508 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-10 19:10:50.093  INFO 6508 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-10-10 19:10:50.099  WARN 6508 --- [restartedMain] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2017-10-10 19:10:50.171  INFO 6508 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-10-10 19:10:50.173  INFO 6508 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-10-10 19:10:50.179  INFO 6508 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-10-10 19:10:50.237  INFO 6508 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-10-10 19:10:50.243  INFO 6508 --- [restartedMain] com.zick.SpringdemoApplication           : Started SpringdemoApplication in 5.407 seconds (JVM running for 7.018)
+2017-10-10 19:10:57.638  INFO 6508 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-10 19:10:57.638  INFO 6508 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-10-10 19:10:57.659  INFO 6508 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2017-10-10 19:10:57.699 ERROR 6508 --- [http-nio-8080-exec-1] com.zick.controller.UserController       : error
+2017-10-10 19:10:57.735  INFO 6508 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2017-10-10 19:10:57.926 DEBUG 6508 --- [http-nio-8080-exec-1] com.zick.dao.UserMapper.checkUsername    : ==>  Preparing: SELECT count(1) from zhihu_user WHERE username = ? 
+2017-10-10 19:10:57.947 DEBUG 6508 --- [http-nio-8080-exec-1] com.zick.dao.UserMapper.checkUsername    : ==> Parameters: zick(String)
+2017-10-10 19:10:57.963 DEBUG 6508 --- [http-nio-8080-exec-1] com.zick.dao.UserMapper.checkUsername    : <==      Total: 1
+2017-10-10 19:10:57.971 DEBUG 6508 --- [http-nio-8080-exec-1] com.zick.dao.UserMapper.selectLogin      : ==>  Preparing: SELECT id, username, password, phone, create_time, update_time, img FROM zhihu_user WHERE username=? and password =? 
+2017-10-10 19:10:57.972 DEBUG 6508 --- [http-nio-8080-exec-1] com.zick.dao.UserMapper.selectLogin      : ==> Parameters: zick(String), 09EEB592558D88F372F4AEC8DA4B4637(String)
+2017-10-10 19:10:57.973 DEBUG 6508 --- [http-nio-8080-exec-1] com.zick.dao.UserMapper.selectLogin      : <==      Total: 0
+2017-10-10 19:11:03.359 ERROR 6508 --- [http-nio-8080-exec-3] com.zick.controller.UserController       : error
+2017-10-10 19:11:03.359 DEBUG 6508 --- [http-nio-8080-exec-3] com.zick.dao.UserMapper.checkUsername    : ==>  Preparing: SELECT count(1) from zhihu_user WHERE username = ? 
+2017-10-10 19:11:03.360 DEBUG 6508 --- [http-nio-8080-exec-3] com.zick.dao.UserMapper.checkUsername    : ==> Parameters: zick(String)
+2017-10-10 19:11:03.361 DEBUG 6508 --- [http-nio-8080-exec-3] com.zick.dao.UserMapper.checkUsername    : <==      Total: 1
+2017-10-10 19:11:03.362 DEBUG 6508 --- [http-nio-8080-exec-3] com.zick.dao.UserMapper.selectLogin      : ==>  Preparing: SELECT id, username, password, phone, create_time, update_time, img FROM zhihu_user WHERE username=? and password =? 
+2017-10-10 19:11:03.362 DEBUG 6508 --- [http-nio-8080-exec-3] com.zick.dao.UserMapper.selectLogin      : ==> Parameters: zick(String), D8F80B67499E434EA61ADAF6E6219BF2(String)
+2017-10-10 19:11:03.365 DEBUG 6508 --- [http-nio-8080-exec-3] com.zick.dao.UserMapper.selectLogin      : <==      Total: 1
+2017-10-11 14:00:34.570  INFO 33904 --- [restartedMain] com.zick.SpringdemoApplication           : Starting SpringdemoApplication on lp-PC with PID 33904 (D:\File\IdeaProjects\SpringBootDemo\target\classes started by Administrator in D:\File\IdeaProjects\SpringBootDemo)
+2017-10-11 14:00:34.571  INFO 33904 --- [restartedMain] com.zick.SpringdemoApplication           : No active profile set, falling back to default profiles: default
+2017-10-11 14:00:35.127  INFO 33904 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52f7a312: startup date [Wed Oct 11 14:00:35 CST 2017]; root of context hierarchy
+2017-10-11 14:00:36.640  INFO 33904 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-10-11 14:00:38.010  INFO 33904 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-10-11 14:00:38.022  INFO 33904 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-11 14:00:38.023  INFO 33904 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-10-11 14:00:38.381  INFO 33904 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-10-11 14:00:38.384  INFO 33904 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-11 14:00:38.384  INFO 33904 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3262 ms
+2017-10-11 14:00:38.680  INFO 33904 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-11 14:00:38.690  INFO 33904 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'com.zick.config.druid.DruidStatViewServlet' to [/druid/*]
+2017-10-11 14:00:38.728  INFO 33904 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-11 14:00:38.729  INFO 33904 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-11 14:00:38.738  INFO 33904 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-11 14:00:38.738  INFO 33904 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-11 14:00:38.738  INFO 33904 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2017-10-11 14:00:38.738  INFO 33904 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2017-10-11 14:00:40.926  INFO 33904 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52f7a312: startup date [Wed Oct 11 14:00:35 CST 2017]; root of context hierarchy
+2017-10-11 14:00:41.005  INFO 33904 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/delete],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.delete(int,javax.servlet.http.HttpServletResponse)
+2017-10-11 14:00:41.006  INFO 33904 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/release],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.insert(com.zick.model.Content,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletResponse)
+2017-10-11 14:00:41.006  INFO 33904 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/support],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.support(int,javax.servlet.http.HttpServletResponse)
+2017-10-11 14:00:41.007  INFO 33904 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAllContent],methods=[POST]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.getAllContent(javax.servlet.http.HttpServletResponse)
+2017-10-11 14:00:41.007  INFO 33904 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/degrade],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ContentController.degrade(int,javax.servlet.http.HttpServletResponse)
+2017-10-11 14:00:41.008  INFO 33904 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/set],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisSet(java.lang.String)
+2017-10-11 14:00:41.009  INFO 33904 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAll]}" onto public com.zick.common.ServerResponse<java.util.List<com.zick.model.User>> com.zick.controller.ExampleController.users()
+2017-10-11 14:00:41.009  INFO 33904 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/get],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.ExampleController.redisGet()
+2017-10-11 14:00:41.012  INFO 33904 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/thymeleaf/git],methods=[GET]}" onto public java.lang.String com.zick.controller.ThymeleafTestController.getGit()
+2017-10-11 14:00:41.016  INFO 33904 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/register],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.register(com.zick.model.User,javax.servlet.http.HttpServletResponse)
+2017-10-11 14:00:41.017  INFO 33904 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/test],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.test(com.zick.model.User)
+2017-10-11 14:00:41.017  INFO 33904 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getAllUser],methods=[GET]}" onto public com.zick.common.ServerResponse<java.util.List<com.zick.model.User>> com.zick.controller.UserController.getAllUser()
+2017-10-11 14:00:41.017  INFO 33904 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/hello],methods=[GET]}" onto public java.lang.String com.zick.controller.UserController.sayHello()
+2017-10-11 14:00:41.018  INFO 33904 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[GET]}" onto public com.zick.common.ServerResponse com.zick.controller.UserController.login(javax.servlet.http.HttpSession,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2017-10-11 14:00:41.020  INFO 33904 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-11 14:00:41.021  INFO 33904 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-11 14:00:41.079  INFO 33904 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 14:00:41.080  INFO 33904 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 14:00:41.145  INFO 33904 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-11 14:00:42.747  INFO 33904 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-10-11 14:00:42.756  WARN 33904 --- [restartedMain] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2017-10-11 14:00:42.951  INFO 33904 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-10-11 14:00:42.953  INFO 33904 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-10-11 14:00:42.960  INFO 33904 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-10-11 14:00:43.053  INFO 33904 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-10-11 14:00:43.059  INFO 33904 --- [restartedMain] com.zick.SpringdemoApplication           : Started SpringdemoApplication in 9.188 seconds (JVM running for 11.841)
+2017-10-11 14:00:43.882  INFO 33904 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-11 14:00:43.883  INFO 33904 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-10-11 14:00:43.910  INFO 33904 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2017-10-11 14:00:43.957 ERROR 33904 --- [http-nio-8080-exec-1] com.zick.controller.UserController       : error
+2017-10-11 14:00:44.005  INFO 33904 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2017-10-11 14:00:44.282 DEBUG 33904 --- [http-nio-8080-exec-1] com.zick.dao.UserMapper.checkUsername    : ==>  Preparing: SELECT count(1) from zhihu_user WHERE username = ? 
+2017-10-11 14:00:44.305 DEBUG 33904 --- [http-nio-8080-exec-1] com.zick.dao.UserMapper.checkUsername    : ==> Parameters: zick(String)
+2017-10-11 14:00:44.342 DEBUG 33904 --- [http-nio-8080-exec-1] com.zick.dao.UserMapper.checkUsername    : <==      Total: 1
+2017-10-11 14:00:44.350 DEBUG 33904 --- [http-nio-8080-exec-1] com.zick.dao.UserMapper.selectLogin      : ==>  Preparing: SELECT id, username, password, phone, create_time, update_time, img FROM zhihu_user WHERE username=? and password =? 
+2017-10-11 14:00:44.351 DEBUG 33904 --- [http-nio-8080-exec-1] com.zick.dao.UserMapper.selectLogin      : ==> Parameters: zick(String), D8F80B67499E434EA61ADAF6E6219BF2(String)
+2017-10-11 14:00:44.353 DEBUG 33904 --- [http-nio-8080-exec-1] com.zick.dao.UserMapper.selectLogin      : <==      Total: 1
+2017-10-11 14:00:51.657 DEBUG 33904 --- [http-nio-8080-exec-6] com.zick.dao.UserMapper.getAllUser       : ==>  Preparing: SELECT * from zhihu_user 
+2017-10-11 14:00:51.658 DEBUG 33904 --- [http-nio-8080-exec-6] com.zick.dao.UserMapper.getAllUser       : ==> Parameters: 
+2017-10-11 14:00:51.667 DEBUG 33904 --- [http-nio-8080-exec-6] com.zick.dao.UserMapper.getAllUser       : <==      Total: 2
+2017-10-11 14:06:18.059 DEBUG 33904 --- [http-nio-8080-exec-5] com.zick.dao.UserMapper.getAllUser       : ==>  Preparing: SELECT * from zhihu_user 
+2017-10-11 14:06:18.060 DEBUG 33904 --- [http-nio-8080-exec-5] com.zick.dao.UserMapper.getAllUser       : ==> Parameters: 
+2017-10-11 14:06:18.066 DEBUG 33904 --- [http-nio-8080-exec-5] com.zick.dao.UserMapper.getAllUser       : <==      Total: 2
+2017-10-11 14:07:17.955 DEBUG 33904 --- [http-nio-8080-exec-8] com.zick.dao.UserMapper.getAllUser       : ==>  Preparing: SELECT * from zhihu_user 
+2017-10-11 14:07:17.956 DEBUG 33904 --- [http-nio-8080-exec-8] com.zick.dao.UserMapper.getAllUser       : ==> Parameters: 
+2017-10-11 14:07:17.959 DEBUG 33904 --- [http-nio-8080-exec-8] com.zick.dao.UserMapper.getAllUser       : <==      Total: 2
